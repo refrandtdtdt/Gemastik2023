@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : Entity
@@ -30,6 +31,7 @@ public class Player : Entity
         }
     }
 
+
     // getter and setter
     public float GetSpeed()
     {
@@ -48,4 +50,6 @@ public class Player : Entity
     {
         this.jumpDistance = jumpDistance;
     }
+
+
 }
