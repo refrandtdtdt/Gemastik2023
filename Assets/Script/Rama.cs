@@ -1,25 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Rama : Player
 {
-    
-    public Rama()
+    // Start is called before the first frame update
+
+    void Start()
     {
         SetId(1);
         SetDescription("Karakter utama dari ini, memiliki senjata panah idk the name lmao");
+        SetSpeed(0.05f);
+        SetJumpDistance(10);
+        rb = GetComponent<Rigidbody2D>();
     }
-    // Start is called before the first frame update
-/*
-    void Start()
-    {
-        
-    }
-*/
+
     // Update is called once per frame
+
     void Update()
     {
-        
+        base.Move();
+        base.Jump();
     }
 }

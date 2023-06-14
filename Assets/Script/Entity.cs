@@ -5,9 +5,9 @@ using UnityEngine;
 public class Entity : MonoBehaviour
 {
     //attribute
-    private int id;
+    [SerializeField] private int id;
 
-    private string description;
+    [SerializeField] private string description;
 
     // Update is called once per frame
     void Update()
