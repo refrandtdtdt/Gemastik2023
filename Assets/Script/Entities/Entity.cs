@@ -7,7 +7,7 @@ public class Entity : MonoBehaviour
     //attribute
     private int id;
     private string description;
-    private int health;
+    [SerializeField] private int health;
     private int maxHealth;
 
     // getter and setter
@@ -41,6 +41,10 @@ public class Entity : MonoBehaviour
         if(health > maxHealth)
         {
             health = maxHealth;
+        }
+        if(health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
     public void SetMaxHealth(int maxHealth)
