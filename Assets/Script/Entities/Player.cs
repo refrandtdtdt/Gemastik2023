@@ -18,7 +18,7 @@ public class Player : Entity
             transform.position += new Vector3(-speed, 0);
         }
         else if (Input.GetKey(KeyCode.D)){
-            transform.position += new Vector3(speed, 0); ;
+            transform.position += new Vector3(speed, 0);
         }
     }
     public void Jump()
