@@ -1,13 +1,19 @@
-using Unity.VisualScripting;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class Rama : Player
+public class Enemy : Entity
 {
+    public override void Move()
+    {
+        
+    }
+
+    // Start is called before the first frame update
     void Start()
     {
         SetId(1);
-        SetDescription("Karakter utama dari ini, memiliki senjata panah idk the name lmao");
+        SetDescription("musuh");
         Speed = 0.05f;
         JumpDistance = 10;
         SetMaxHealth(100);
@@ -16,10 +22,9 @@ public class Rama : Player
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
-        Attack();
+        
     }
 }

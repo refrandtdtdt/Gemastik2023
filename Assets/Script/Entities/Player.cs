@@ -1,26 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : Entity
 {
-    [SerializeField] private LayerMask layerMask;
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpDistance;
-    protected Rigidbody2D rb;
-
+    [SerializeField] protected LayerMask enemyMask;
     // Player's Action
 
+    override
     public void Move()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-speed, 0);
+            transform.position += new Vector3(-Speed, 0);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (Input.GetKey(KeyCode.D)){
-            transform.position += new Vector3(speed, 0);
+            transform.position += new Vector3(Speed, 0);
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
     /**
@@ -28,32 +23,15 @@ public class Player : Entity
      */
     public void Jump()
     {
-        if (CheckGround() && Input.GetKeyDown(KeyCode.Space))
+        if (CheckGround() && (JumpCount > 0) && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Kuduna Loncat euy");
-            rb.AddForce(new Vector2(0, jumpDistance), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+            JumpCount--;
         }
+        if (CheckGround()) JumpCount = 1;
     }
 
-
-    // getter and setter
-    public float GetSpeed()
-    {
-        return speed;
-    }
-    public void SetSpeed(float speed)
-    {
-        this.speed = speed;
-    }
-    
-    public float GetJumpDistance()
-    {
-        return jumpDistance;
-    }
-    public void SetJumpDistance(float jumpDistance)
-    {
-        this.jumpDistance = jumpDistance;
-    }
 
     private bool CheckGround()
     {
@@ -61,7 +39,7 @@ public class Player : Entity
         Vector2 raycastPos = playerCollider.bounds.center;
         float raycastDist = playerCollider.bounds.extents.y + 0.1f;
 
-        RaycastHit2D hit = Physics2D.BoxCast(raycastPos, playerCollider.bounds.size, 0f, Vector2.down, raycastDist, layerMask);
+        RaycastHit2D hit = Physics2D.BoxCast(raycastPos, playerCollider.bounds.size, 0f, Vector2.down, raycastDist, this.LayerMask);
         Color rayColor;
         if (hit.collider != null)
         {
@@ -74,7 +52,28 @@ public class Player : Entity
         }
         Debug.DrawRay(raycastPos + new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
-        Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, raycastDist), Vector2.right * raycastDist*2, rayColor);
+        Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, raycastDist), 2 * raycastDist * Vector2.right, rayColor);
         return hit.collider != null;
+    }
+
+    public void Attack()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, AttackRadius, enemyMask);
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Attacking");
+
+            foreach (Collider2D enemy in enemies)
+            {
+                Debug.Log("Hit enemy");
+                Enemy theEnemy = enemy.GetComponent<Enemy>();
+                theEnemy.SetHealth(theEnemy.GetHealth() - AttackPower);
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, AttackRadius);
     }
 }
