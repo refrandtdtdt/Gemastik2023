@@ -9,7 +9,7 @@ public abstract class Box : MonoBehaviour,IMoveable
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            if (collider.gameObject.TryGetComponent<Player>(out Player player))
+            if (collider.gameObject.TryGetComponent<Player>(out _))
             {
                 Debug.Log("Whoops!");
                 Interact();
