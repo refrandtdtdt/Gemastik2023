@@ -1787,9 +1787,13 @@ MonoBehaviour:
     m_Bits: 64
   speed: 0
   jumpDistance: 0
-  attackPower: 0
+  attackPower: 20
   attackPoint: {fileID: 1999264502}
   attackRadius: 1
+  jumpCount: 1
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1999264502
 GameObject:
   m_ObjectHideFlags: 0
