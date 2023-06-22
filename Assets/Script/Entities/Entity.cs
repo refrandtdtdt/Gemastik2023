@@ -85,4 +85,8 @@ public abstract class Entity : MonoBehaviour
     }
 
     public abstract void Move();
+    public virtual void Die()
+    {
+        Destroy(gameObject);
+    }
 }

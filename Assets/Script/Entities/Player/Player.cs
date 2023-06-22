@@ -72,6 +72,10 @@ public class Player : Entity
         }
     }
 
+    public override void Die()
+    {
+        transform.position = new Vector2(5.75f, 1f);
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, AttackRadius);
