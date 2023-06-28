@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class Player : Entity
 {
+    private bool canMove = true;
     [SerializeField] protected LayerMask enemyMask;
+
+    public bool CanMove { get => canMove; set => canMove = value; }
+
     // Player's Action
 
     override

@@ -18,8 +18,11 @@ public class Rama : Player
 
     void Update()
     {
-        Move();
-        Jump();
-        Attack();
+        if (CanMove)
+        {
+            Move();
+            Jump();
+            Attack();
+        }
     }
 }

@@ -4,32 +4,50 @@ using UnityEngine;
 
 public class PuzzleJembatan : Device
 {
+    public ControlPanel UIpanel;
     public GameObject[] platforms;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    private bool near;
+    private Player player;
+    
     public override void Interact()
     {
-        platforms[0].GetComponentInChildren<WPF_OnCommand>().Triggered = true;
+        //UIpanel.SetupUI(this);
+        //platforms[0].GetComponentInChildren<WPF_OnCommand>().Triggered = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        if (near)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                Interact();
+                if (UIpanel.gameObject.activeSelf)
+                {
+                    player.CanMove = true;
+                    UIpanel.StopUI();
+                }
+                else
+                {
+                    player.CanMove = false;
+                    UIpanel.SetupUI(this);
+                }
             }
-        }  
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            near = true;
+            this.player = player;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            near = false;
+        }
     }
 }
