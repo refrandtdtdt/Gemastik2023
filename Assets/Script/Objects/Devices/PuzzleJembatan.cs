@@ -5,14 +5,39 @@ using UnityEngine;
 public class PuzzleJembatan : Device
 {
     public ControlPanel UIpanel;
-    public GameObject[] platforms;
+    public WPF_OnCommand[] platforms;
+    public List<int> buttonRules = new List<int>();
     private bool near;
     private Player player;
-    
+    [HideInInspector] public int buttonCount;
+
+    private void Awake()
+    {
+        buttonCount = buttonRules.Capacity;
+    }
+
     public override void Interact()
     {
-        //UIpanel.SetupUI(this);
-        //platforms[0].GetComponentInChildren<WPF_OnCommand>().Triggered = true;
+        if (UIpanel.gameObject.activeSelf)
+        {
+            player.CanMove = true;
+            UIpanel.StopUI();
+        }
+        else
+        {
+            player.CanMove = false;
+            UIpanel.SetupUI(this);
+        }
+    }
+
+    public void MovePlatform(int ruleidx)
+    {
+        float rulefloat = buttonRules[ruleidx];
+        while(rulefloat > 0)
+        {
+            platforms[(int)(rulefloat % 10)-1].Triggered = true;
+            rulefloat = Mathf.Floor(rulefloat / 10);
+        }
     }
 
     private void Update()
@@ -21,16 +46,7 @@ public class PuzzleJembatan : Device
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (UIpanel.gameObject.activeSelf)
-                {
-                    player.CanMove = true;
-                    UIpanel.StopUI();
-                }
-                else
-                {
-                    player.CanMove = false;
-                    UIpanel.SetupUI(this);
-                }
+                Interact();
             }
         }
     }

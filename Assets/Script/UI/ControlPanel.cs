@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlPanel : MonoBehaviour
 {
@@ -17,9 +18,10 @@ public class ControlPanel : MonoBehaviour
     public void SetupUI(PuzzleJembatan puzzle)
     {
         gameObject.SetActive(true);
-        foreach (GameObject platform in puzzle.platforms)
+        for (int i = 0; i < puzzle.buttonCount; i++)
         {
             buttons.Add(Instantiate(buttonTemplate, buttonParent.transform));
+            buttons[i].GetComponent<Button>().onClick.AddListener(delegate { puzzle.MovePlatform(i); });
         }
     }
 
@@ -28,6 +30,7 @@ public class ControlPanel : MonoBehaviour
         gameObject.SetActive(false);
         foreach (GameObject button in buttons)
         {
+            buttons.Clear();
             Destroy(button);
         }
     }
