@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     public Transform target;
     public float speed;
-    public float nextWaypointDistance = 3f;
+    public float nextWaypointDistance = 2f;
     public Enemy enemyObject;
 
     Path path;

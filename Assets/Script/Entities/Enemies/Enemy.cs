@@ -29,7 +29,10 @@ public class Enemy : Entity
             JumpCount--;
             isJumping = false;
         }
-        if (CheckGround()) JumpCount = 1;
+        if (CheckGround()) {
+            JumpCount = 1;
+            isJumping = false;
+         }
     }
 
 
