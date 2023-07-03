@@ -31,6 +31,8 @@ public class ControlPanel : MonoBehaviour
         }
     }
 
+    //public void SetupUI()
+
     public void StopUI()
     {
         gameObject.SetActive(false);

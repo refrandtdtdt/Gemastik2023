@@ -4,30 +4,13 @@ using UnityEngine;
 
 public class PuzzleJembatan : Device
 {
-    public ControlPanel UIpanel;
-    public WPF_OnCommand[] platforms;
-    public List<int> buttonRules = new List<int>();
-    private bool near;
-    private Player player;
+    [SerializeField] private WPF_OnCommand[] platforms;
+    [SerializeField] private List<int> buttonRules = new List<int>();
     [HideInInspector] public int buttonCount;
 
     private void Awake()
     {
         buttonCount = buttonRules.Capacity;
-    }
-
-    public override void Interact()
-    {
-        if (UIpanel.gameObject.activeSelf)
-        {
-            player.CanMove = true;
-            UIpanel.StopUI();
-        }
-        else
-        {
-            player.CanMove = false;
-            UIpanel.SetupUI(this);
-        }
     }
 
     public void MovePlatform(string ruleidx)
@@ -42,30 +25,17 @@ public class PuzzleJembatan : Device
         }
     }
 
-    private void Update()
+    public override void Interact()
     {
-        if (near)
+        if (UIpanel.gameObject.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                Interact();
-            }
+            player.CanMove = true;
+            UIpanel.StopUI();
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        else
         {
-            near = true;
-            this.player = player;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.TryGetComponent<Player>(out Player player))
-        {
-            near = false;
+            player.CanMove = false;
+            UIpanel.SetupUI(this);
         }
     }
 }
