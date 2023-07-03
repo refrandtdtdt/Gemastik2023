@@ -2,19 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public abstract class Device : MonoBehaviour, Interactable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] protected ControlPanel UIpanel;
+    protected Player player;
+    private bool near;
 
-    // Update is called once per frame
+    private void OnValidate()
+    {
+        GetComponent<Collider2D>().isTrigger = true;
+    }
     void Update()
     {
-        
+        if (near)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Interact();
+            }
+        }
     }
 
     public abstract void Interact();
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            near = true;
+            this.player = player;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            near = false;
+        }
+    }
 }
