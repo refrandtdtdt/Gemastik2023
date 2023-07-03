@@ -30,13 +30,15 @@ public class PuzzleJembatan : Device
         }
     }
 
-    public void MovePlatform(int ruleidx)
+    public void MovePlatform(string ruleidx)
     {
-        float rulefloat = buttonRules[ruleidx];
-        while(rulefloat > 0)
+        //Debug.Log("rule ke-" + ruleidx);
+        int rule = buttonRules[int.Parse(ruleidx)];
+        while(rule > 0)
         {
-            platforms[(int)(rulefloat % 10)-1].Triggered = true;
-            rulefloat = Mathf.Floor(rulefloat / 10);
+            //Debug.Log("platform ke-"+(rule % 10));
+            platforms[(rule % 10)-1].Triggered = true;
+            rule = rule / 10;
         }
     }
 

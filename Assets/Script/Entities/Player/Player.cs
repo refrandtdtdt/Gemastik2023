@@ -29,7 +29,7 @@ public class Player : Entity
     {
         if (CheckGround() && (JumpCount > 0) && Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Kuduna Loncat euy");
+            //Debug.Log("Kuduna Loncat euy");
             rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
             JumpCount--;
         }

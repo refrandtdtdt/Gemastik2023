@@ -9,7 +9,7 @@ public class ControlPanel : MonoBehaviour
     private List<GameObject> buttons = new List<GameObject>();
     [SerializeField] private GameObject buttonTemplate;
 
-    void Start()
+    void OnValidate()
     {
         gameObject.SetActive(false);
         buttonParent = gameObject.transform.GetChild(0).gameObject;
@@ -21,7 +21,13 @@ public class ControlPanel : MonoBehaviour
         for (int i = 0; i < puzzle.buttonCount; i++)
         {
             buttons.Add(Instantiate(buttonTemplate, buttonParent.transform));
-            buttons[i].GetComponent<Button>().onClick.AddListener(delegate { puzzle.MovePlatform(i); });
+        }
+        int j = 0;
+        foreach (GameObject button in buttons)
+        {
+            button.name = j + "";
+            button.GetComponent<Button>().onClick.AddListener(delegate { puzzle.MovePlatform(button.name); });
+            j++;
         }
     }
 
@@ -30,8 +36,8 @@ public class ControlPanel : MonoBehaviour
         gameObject.SetActive(false);
         foreach (GameObject button in buttons)
         {
-            buttons.Clear();
             Destroy(button);
         }
+        buttons.Clear();
     }
 }
