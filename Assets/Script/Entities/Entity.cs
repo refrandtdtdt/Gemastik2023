@@ -16,6 +16,7 @@ public abstract class Entity : MonoBehaviour
     protected BoxCollider2D boxCollider;
     private int maxHealth;
     [SerializeField] private int jumpCount = 1;
+    [SerializeField] private Vector3 scale;
 
 
     // getter and setter
@@ -37,6 +38,8 @@ public abstract class Entity : MonoBehaviour
             }
         }
     }
+
+    public Vector3 Scale { get => scale; set => scale = value; }
 
     public int GetId()
     {
