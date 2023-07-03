@@ -2555,6 +2555,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5618651402217915232, guid: 67ebaebf5ec290b4faf2aeb032cbf757, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6319223570103441906, guid: 67ebaebf5ec290b4faf2aeb032cbf757, type: 3}
       propertyPath: target
       value: 
