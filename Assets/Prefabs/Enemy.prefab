@@ -151,5 +151,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 3211589442778298077, guid: 85dac9b2f9bf9df4fbcbc3757cb92389, type: 3}
   speed: 0
-  nextWaypointDistance: 3
-  enemyObject: {fileID: 0}
+  nextWaypointDistance: 25
+  enemyObject: {fileID: 8344829528243003163, guid: 434c89b4943025d4d89ba1fceff0206c, type: 3}

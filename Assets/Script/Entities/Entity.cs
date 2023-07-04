@@ -1,5 +1,10 @@
 using UnityEngine;
 
+public enum Hadap
+{
+    Kiri = 0,
+    Kanan = 1,
+}
 public abstract class Entity : MonoBehaviour
 {
     //attribute
@@ -17,6 +22,7 @@ public abstract class Entity : MonoBehaviour
     private int maxHealth;
     [SerializeField] private int jumpCount = 1;
     [SerializeField] private Vector3 scale;
+    private Hadap madepMana;
 
 
     // getter and setter
@@ -40,6 +46,7 @@ public abstract class Entity : MonoBehaviour
     }
 
     public Vector3 Scale { get => scale; set => scale = value; }
+    public Hadap MadepMana { get => madepMana; set => madepMana = value; }
 
     public int GetId()
     {
