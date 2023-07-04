@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using Unity.VisualScripting;
+using System;
 
 public class EnemyAI : MonoBehaviour
 {
 
     public Transform target;
     public float speed;
-    public float nextWaypointDistance = 2f;
+    public float nextWaypointDistance = 25f;
     public Enemy enemyObject;
 
     Path path;
@@ -47,6 +48,12 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("Recalculate Graph");
+            AstarPath.active.Scan();
+        }
+
         if (path == null)
         {
             return;
@@ -58,27 +65,31 @@ public class EnemyAI : MonoBehaviour
         }
         reachedEndOfPath = false;
 
-        Vector2 direction = ((Vector2) path.vectorPath[currentWaypoint] - (Vector2) transform.position).normalized;
-        if (direction.x < 0)
+        if (Vector2.Distance(transform.position, target.position) <= 20f)
         {
-            enemyObject.movingDirection = "Left";
-            enemyObject.Move();
-        } else if (direction.x > 0)
-        {
-            enemyObject.movingDirection = "Right";
-            enemyObject.Move();
-        }
-        else
-        {
-            enemyObject.movingDirection = "Idle";
-            enemyObject.Move();
-        }
-        
-        if (direction.y > 0)
-        {
-            enemyObject.isJumping = true;
-            enemyObject.Jump();
-            enemyObject.isJumping = false;
+            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - (Vector2)transform.position).normalized;
+            if (direction.x < 0)
+            {
+                enemyObject.movingDirection = "Left";
+                enemyObject.Move();
+            }
+            else if (direction.x > 0)
+            {
+                enemyObject.movingDirection = "Right";
+                enemyObject.Move();
+            }
+            else
+            {
+                enemyObject.movingDirection = "Idle";
+                enemyObject.Move();
+            }
+
+            if (direction.y > 0)
+            {
+                enemyObject.isJumping = true;
+                enemyObject.Jump();
+                enemyObject.isJumping = false;
+            }
         }
         float distance = Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]);
 
