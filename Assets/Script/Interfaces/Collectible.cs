@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PolygonCollider2D))]
+//[RequireComponent(typeof(PolygonCollider2D))]
 public abstract class Collectible : MonoBehaviour
 {
     private void OnValidate()
     {
+        if (GetComponent<Collider2D>() == null)
+        {
+            gameObject.AddComponent<PolygonCollider2D>();
+        }
         GetComponent<Collider2D>().isTrigger = true;
     }
     protected void OnTriggerEnter2D(Collider2D collision)
