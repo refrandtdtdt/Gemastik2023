@@ -8,7 +8,7 @@ public class Rama : Player
     {
         SetId(1);
         SetDescription("Karakter utama dari ini, memiliki senjata panah idk the name lmao");
-        Speed = 0.1f;
+        Speed = 0.05f;
         JumpDistance = 10;
         SetMaxHealth(100);
         SetHealth(100);

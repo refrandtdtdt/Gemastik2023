@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Void : MonoBehaviour
@@ -20,6 +21,10 @@ public class Void : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Entity>(out Entity entity))
         {
             entity.Die();
+        }
+        if (collision.gameObject.TryGetComponent<Arrow>(out Arrow arrow))
+        {
+            Destroy(arrow.gameObject);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bow : MonoBehaviour
@@ -30,7 +31,6 @@ public class Bow : MonoBehaviour
     {
         Vector2 bowPos = transform.position;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
         direction = mousePos - bowPos;
 
         if (player.MadepMana == Hadap.Kiri)
@@ -38,6 +38,9 @@ public class Bow : MonoBehaviour
             direction *= -1;
         }
         transform.right = direction;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        angle = Mathf.Clamp(angle, -90f, 90f);
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // mengecek apakah klik kiri tetikus sudah ditekan
         if (Input.GetMouseButtonDown(1))
@@ -72,7 +75,14 @@ public class Bow : MonoBehaviour
         {
             vektorKecepatan *= -1;
         }
-        Vector2 posisi = (Vector2)shotPoint.position + 
+        // Menghitung sudut rotasi
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        angle = Mathf.Clamp(angle, -90f, 90f);
+
+        // Mendapatkan vektor rotasi berdasarkan sudut
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        Vector2 posisi = (Vector2)shotPoint.position +
             (direction.normalized * vektorKecepatan * t) + 
             0.5f * Physics2D.gravity * t * t;
         return posisi;

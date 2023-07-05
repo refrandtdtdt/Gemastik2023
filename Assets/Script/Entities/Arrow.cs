@@ -41,7 +41,7 @@ public class Arrow : MonoBehaviour
         //cek apakah kena ke enemy
         if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            enemy.SetHealth(enemy.GetHealth() - Damage);
+            //enemy.SetHealth(enemy.GetHealth() - Damage);
 
         }
         startTime = Time.time;
