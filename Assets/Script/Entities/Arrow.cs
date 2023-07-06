@@ -33,15 +33,16 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         kenaCollider = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
         //cek apakah kena ke enemy
-        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        if (collider.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            //enemy.SetHealth(enemy.GetHealth() - Damage);
+            Debug.Log("Musuh Kena Hit!");
+            enemy.SetHealth(enemy.GetHealth() - Damage);
 
         }
         startTime = Time.time;

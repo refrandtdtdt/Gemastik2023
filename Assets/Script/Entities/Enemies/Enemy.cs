@@ -11,12 +11,12 @@ public class Enemy : Entity
     {
         if (movingDirection.Equals("Left"))
         {
-            transform.position += new Vector3(-Speed, 0);
+            transform.position += new Vector3(-Speed*Time.deltaTime, 0);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (movingDirection.Equals("Right"))
         {
-            transform.position += new Vector3(Speed, 0);
+            transform.position += new Vector3(Speed * Time.deltaTime, 0);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
     }
@@ -71,7 +71,7 @@ public class Enemy : Entity
     {
         SetId(1);
         SetDescription("musuh");
-        Speed = 0.15f;
+        Speed = 7f;
         JumpDistance = 10;
         SetMaxHealth(100);
         SetHealth(100);

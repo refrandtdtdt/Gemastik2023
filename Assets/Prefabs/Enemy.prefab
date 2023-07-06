@@ -40,9 +40,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1986934464156723953}
     m_Modifications:
+    - target: {fileID: 5839860133612741825, guid: 434c89b4943025d4d89ba1fceff0206c, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6401612411670214496, guid: 434c89b4943025d4d89ba1fceff0206c, type: 3}
       propertyPath: m_Name
       value: Kroco
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344829528243003163, guid: 434c89b4943025d4d89ba1fceff0206c, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 9191667321254359875, guid: 434c89b4943025d4d89ba1fceff0206c, type: 3}
       propertyPath: m_RootOrder

@@ -12,24 +12,26 @@ public class CutsceneTrigger : MonoBehaviour
 
     private void Update()
     {
-        if(enter && Input.GetKeyDown(KeyCode.Q))
-        {
-            manager.StartCutscene(cutscene);
-        }
+        //if(enter && Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    manager.StartCutscene(cutscene);
+        //}
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.TryGetComponent<Player>(out _))
         {
             enter = true;
+            manager.StartCutscene(cutscene);
+            Destroy(gameObject);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.TryGetComponent<Player>(out _))
-        {
-            enter = false;
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.TryGetComponent<Player>(out _))
+    //    {
+    //        enter = false;
+    //    }
+    //}
 }

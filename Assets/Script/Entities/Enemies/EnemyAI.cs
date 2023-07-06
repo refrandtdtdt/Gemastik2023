@@ -26,8 +26,9 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyObject = gameObject.GetComponent<Enemy>();
         speed = enemyObject.Speed;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
 
-        InvokeRepeating("UpdatePath", 0f, .5f);
+        InvokeRepeating("UpdatePath", 0f, .1f);
     }
 
     void UpdatePath()
@@ -84,7 +85,7 @@ public class EnemyAI : MonoBehaviour
                 enemyObject.Move();
             }
 
-            if (direction.y > 0)
+            if ((-transform.position + target.position).y > 0.5f)
             {
                 enemyObject.isJumping = true;
                 enemyObject.Jump();
