@@ -15,12 +15,12 @@ public class Player : Entity
         if (Input.GetKey(KeyCode.A))
         {
             transform.position += new Vector3(-Speed*Time.deltaTime, 0);
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
             MadepMana = Hadap.Kiri;
         }
         else if (Input.GetKey(KeyCode.D)){
             transform.position += new Vector3(Speed * Time.deltaTime, 0);
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
             MadepMana = Hadap.Kanan;
         }
     }

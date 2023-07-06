@@ -72,12 +72,12 @@ public class Enemy : Entity
         SetId(1);
         SetDescription("musuh");
         Speed = 7f;
-        JumpDistance = 10;
+        JumpDistance = 15;
         SetMaxHealth(100);
         SetHealth(100);
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
-        Scale = new Vector3(0.8f, 1.8f, 1f);
+        Scale = transform.localScale;
         startTime = Time.time;
     }
 
