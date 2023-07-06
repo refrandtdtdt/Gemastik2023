@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Rama Walk Compile_0
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2729
+        width: 1524
+        height: 2343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f571b71a8a33aa444bd707dc2ccd4f7b
+      internalID: 399430221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_1
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2729
+        width: 1451
+        height: 2340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b40d8733f9c0b6499c81b08b4d21e95
+      internalID: -1014543615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_2
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 2738
+        width: 1374
+        height: 2324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b944059885aa2c244802a9d99f56e7e0
+      internalID: 325047978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_3
+      rect:
+        serializedVersion: 2
+        x: 5031
+        y: 2729
+        width: 1334
+        height: 2311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47f537b06c0f3c41b047b4512dd676a
+      internalID: 1283181909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_4
+      rect:
+        serializedVersion: 2
+        x: 6691
+        y: 2729
+        width: 1337
+        height: 2302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca07fa241ee0d54eb8e52026da7c092
+      internalID: -74706716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_5
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 292
+        width: 1329
+        height: 2310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ac8e7615e89f64b81a895b0fd566f7
+      internalID: 1454305290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_6
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 292
+        width: 1370
+        height: 2324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a230465ddb830e841b4efdd61059a668
+      internalID: -660161605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_7
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 292
+        width: 1447
+        height: 2338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae022562110d474899dfcfe0faa1c93
+      internalID: 982041113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Walk Compile_8
+      rect:
+        serializedVersion: 2
+        x: 5294
+        y: 292
+        width: 1527
+        height: 2342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16804105f880d3d468daa57197ef8f2b
+      internalID: 961625525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rama Walk Compile_0: 399430221
+      Rama Walk Compile_1: -1014543615
+      Rama Walk Compile_2: 325047978
+      Rama Walk Compile_3: 1283181909
+      Rama Walk Compile_4: -74706716
+      Rama Walk Compile_5: 1454305290
+      Rama Walk Compile_6: -660161605
+      Rama Walk Compile_7: 982041113
+      Rama Walk Compile_8: 961625525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

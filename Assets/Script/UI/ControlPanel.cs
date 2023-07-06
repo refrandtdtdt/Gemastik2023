@@ -21,14 +21,16 @@ public class ControlPanel : MonoBehaviour
         for (int i = 0; i < puzzle.buttonCount; i++)
         {
             buttons.Add(Instantiate(buttonTemplate, buttonParent.transform));
+            foreach (GameObject platform in puzzle.buttonRules[i].platforms)
+            {
+                buttons[i].GetComponent<Button>().onClick.AddListener(delegate { puzzle.MovePlatform(platform); });
+            }
         }
-        int j = 0;
-        foreach (GameObject button in buttons)
-        {
-            button.name = j + "";
-            button.GetComponent<Button>().onClick.AddListener(delegate { puzzle.MovePlatform(button.name); });
-            j++;
-        }
+        //int j = 0;
+        //foreach (GameObject button in buttons)
+        //{
+        //    j++;
+        //}
     }
 
     //public void SetupUI()

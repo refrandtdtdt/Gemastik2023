@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caa8fcea1a27284f84db6cb4ca853a2, type: 3}
+  m_Name: Tes
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - name: lorem
+    portrait: {fileID: 7482667652216324306, guid: def9d32ce222cfd47a04226eefa45f68, type: 3}
+    dialog: ini testing buat cutscenenya
+  - name: ipsum
+    portrait: {fileID: 7482667652216324306, guid: def9d32ce222cfd47a04226eefa45f68, type: 3}
+    dialog: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin
+      quis elit vel ultrices. Maecenas nec tortor sit amet mi egestas scelerisque
+      vitae in urna. Phasellus congue arcu magna, vel vestibulum urna tincidunt in.
+      Curabitur eu libero ut sem fermentum facilisis eget vitae diam. Donec mattis,
+      erat eu faucibus malesuada, nisl neque ornare nisi, sit amet scelerisque velit
+      augue at velit. Phasellus rutrum sollicitudin tincidunt. Sed eu nibh et leo
+      aliquam lobortis ut eu urna. Duis faucibus ante et facilisis molestie.
+  - name: rama
+    portrait: {fileID: 401591068, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: oke
+  - name: pret
+    portrait: {fileID: 7482667652216324306, guid: 8be811bc028963049bfc9ec1a277d145, type: 3}
+    dialog: btw istri lu diculik
+  - name: rama
+    portrait: {fileID: 401591068, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: HAH
+  - name: rama
+    portrait: {fileID: 401591068, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: ANJENG
+  - name: narator(?)
+    portrait: {fileID: 21300000, guid: c6417d9a9130714459a8243becd18791, type: 3}
+    dialog: basically ramayana plot

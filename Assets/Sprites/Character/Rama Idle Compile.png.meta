@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Rama Idle Compile_0
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 2761
+        width: 1636
+        height: 2306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c176f4a3ac036f40aaca3b722651c37
+      internalID: 401591068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_1
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 2761
+        width: 1633
+        height: 2315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30e4c5efb06eee42a07d771d841c195
+      internalID: 1564885570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_2
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 2761
+        width: 1623
+        height: 2329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940e46d9d2d8a0d4489585301178d666
+      internalID: -1322087267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_3
+      rect:
+        serializedVersion: 2
+        x: 5668
+        y: 2761
+        width: 1610
+        height: 2342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074ff5f5cb7900a48951ff8ebdc6142d
+      internalID: 1554815983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_4
+      rect:
+        serializedVersion: 2
+        x: 7441
+        y: 2761
+        width: 1605
+        height: 2349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1ec2d8b3693124f810e7ea01bf3572
+      internalID: -1020553297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 192
+        width: 1609
+        height: 2338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f22157d87e84746a487105de60c80a
+      internalID: -750748311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 192
+        width: 1619
+        height: 2325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d06499e1c0ae4c9ed1d2f154170dc
+      internalID: 526933985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_7
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 206
+        width: 1628
+        height: 2315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c69f1bee9c87f0449c7e49f28ff6382
+      internalID: 1126170451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Idle Compile_8
+      rect:
+        serializedVersion: 2
+        x: 5668
+        y: 192
+        width: 1637
+        height: 2306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fd32591a09d014db3d406cdbfdbe57
+      internalID: 1837862946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rama Idle Compile_0: 401591068
+      Rama Idle Compile_1: 1564885570
+      Rama Idle Compile_2: -1322087267
+      Rama Idle Compile_3: 1554815983
+      Rama Idle Compile_4: -1020553297
+      Rama Idle Compile_5: -750748311
+      Rama Idle Compile_6: 526933985
+      Rama Idle Compile_7: 1126170451
+      Rama Idle Compile_8: 1837862946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
