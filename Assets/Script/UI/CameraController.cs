@@ -5,11 +5,15 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform camerapos;
-    [SerializeField] private Transform playerpos;
     [SerializeField] private float followspeed;
+    private Transform playerpos;
     private Transform custompos;
     private bool followPlayer = true;
 
+    private void Awake()
+    {
+        playerpos = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     private void LateUpdate()
     {
         if (followPlayer)

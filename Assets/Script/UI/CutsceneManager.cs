@@ -7,18 +7,20 @@ using TMPro;
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
+    [SerializeField] private Image background;
     [SerializeField] private Image portrait;
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private Player player;
+    private Player player;
     private Cutscene currCutscene;
     private Dialogue currDialogue;
     private bool triggered, typing, skip;
     private int index;
 
-    private void Start()
+    private void Awake()
     {
         panel.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
     private void Update()
     {
@@ -36,6 +38,7 @@ public class CutsceneManager : MonoBehaviour
                         {
                             panel.SetActive(false);
                             player.CanMove = true;
+                            Time.timeScale = 1;
                         }
                     }
                     else
@@ -57,17 +60,13 @@ public class CutsceneManager : MonoBehaviour
 
     public void StartCutscene(Cutscene cutscene)
     {
+        Time.timeScale = 0;
         currCutscene = cutscene;
         index = 0;
         triggered = true;
         player.CanMove = false;
         panel.SetActive(true);
-        //foreach (Dialogue dialogue in cutscene.Dialogues)
-        //{
-        //    portrait.sprite = dialogue.portrait;
-        //    nameText.text = dialogue.name;
-        //    dialogueText.text = dialogue.dialog;
-        //}
+        background.sprite = currCutscene.background;
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -77,7 +76,8 @@ public class CutsceneManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.01f);
+            //yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSecondsRealtime(0.01f);
             if (skip)
             {
                 dialogueText.text = sentence;
