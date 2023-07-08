@@ -23,7 +23,7 @@ public class CutsceneTrigger : MonoBehaviour
         }
         if(type == TriggerType.onStart && GetComponent<Collider2D>() != null)
         {
-            Destroy(GetComponent<Collider2D>());
+            //Destroy(GetComponent<Collider2D>().gameObject);
         }
     }
     private void Start()
