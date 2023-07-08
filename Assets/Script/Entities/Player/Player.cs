@@ -3,45 +3,57 @@ using UnityEngine;
 public class Player : Entity
 {
     private bool canMove = true;
+    private bool isMoving = false;
+    private bool isJumping = false;
     [SerializeField] protected LayerMask enemyMask;
 
     public bool CanMove { get => canMove; set => canMove = value; }
+    public bool IsMoving { get => isMoving; set => isMoving = value; }
+    public bool IsJumping { get => isJumping; set => isJumping = value; }
 
     // Player's Action
 
     override
     public void Move()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (MadepMana == Hadap.Kiri)
         {
+            //Vector3 destination = new Vector3(transform.position.x - Speed * Time.deltaTime, transform.position.y, transform.position.z);
+            //transform.position = Vector3.MoveTowards(transform.position, destination, Speed*Time.deltaTime*2);
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
             rb.velocity = new Vector2(-Speed, rb.velocity.y);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
-            MadepMana = Hadap.Kiri;
+            
+            return;
         }
-        else if (Input.GetKey(KeyCode.D)){
+        if (MadepMana == Hadap.Kanan)
+        {
+            //Vector3 destination = new Vector3(transform.position.x + Speed * Time.deltaTime, transform.position.y, transform.position.z);
+            //transform.position = Vector3.MoveTowards(transform.position, destination, Speed * Time.deltaTime*2);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
             rb.velocity = new Vector2(Speed, rb.velocity.y);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
-            MadepMana = Hadap.Kanan;
+            return;
         }
-        else
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
-        }
+        
     }
     /**
      * Jump action for player
      */
     public void Jump()
     {
-        if (CheckGround() && (JumpCount > 0) && Input.GetKeyDown(KeyCode.Space))
+        if (isJumping && (JumpCount > 0))
         {
             //Debug.Log("Kuduna Loncat euy");
-            rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+            //rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, JumpDistance);
             JumpCount--;
         }
-        if (CheckGround()) JumpCount = 1;
+        if (CheckGround()) {
+            IsJumping = false;
+            JumpCount = 1;
+        }
+            
     }
 
 

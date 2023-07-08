@@ -34,7 +34,8 @@ public class Enemy : Entity
             if (CheckGround() && (JumpCount > 0) && isJumping)
             {
                 //Debug.Log("Kuduna Loncat euy");
-                rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+                //rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+                rb.velocity = new Vector2(rb.velocity.x, JumpDistance);
                 JumpCount--;
                 isJumping = false;
             }
@@ -78,7 +79,7 @@ public class Enemy : Entity
         SetId(1);
         SetDescription("musuh");
         Speed = 7f;
-        JumpDistance = 15;
+        JumpDistance = 12;
         SetMaxHealth(100);
         SetHealth(100);
         rb = GetComponent<Rigidbody2D>();

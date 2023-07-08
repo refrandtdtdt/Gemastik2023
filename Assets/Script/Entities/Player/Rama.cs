@@ -22,9 +22,35 @@ public class Rama : Player
     {
         if (CanMove)
         {
-            Move();
-            Jump();
+            if (Input.GetKey(KeyCode.A)){
+                MadepMana = Hadap.Kiri;
+                IsMoving = true;
+            }else if (Input.GetKey(KeyCode.D)) 
+            {
+                MadepMana = Hadap.Kanan;
+                IsMoving = true;
+            }
+            else
+            {
+                IsMoving = false;
+            }
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                IsJumping = true;
+            }
             Attack();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (IsMoving)
+        {
+            Move();
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+        Jump();
     }
 }
