@@ -16,6 +16,7 @@ public class Rama : Player
         boxCollider = GetComponent<BoxCollider2D>();
         MadepMana = Hadap.Kanan;
         Scale = transform.localScale;
+        Animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -25,14 +26,20 @@ public class Rama : Player
             if (Input.GetKey(KeyCode.A)){
                 MadepMana = Hadap.Kiri;
                 IsMoving = true;
+                if (!Animator.GetBool("Moving"))
+                    Animator.SetBool("Moving", true);
             }else if (Input.GetKey(KeyCode.D)) 
             {
                 MadepMana = Hadap.Kanan;
                 IsMoving = true;
+                if (!Animator.GetBool("Moving"))
+                    Animator.SetBool("Moving", true);
             }
             else
             {
                 IsMoving = false;
+                if(Animator.GetBool("Moving"))
+                    Animator.SetBool("Moving", false);
             }
             if (Input.GetKeyDown(KeyCode.Space)) {
                 IsJumping = true;

@@ -5,11 +5,13 @@ public class Player : Entity
     private bool canMove = true;
     private bool isMoving = false;
     private bool isJumping = false;
+    private Animator animator;
     [SerializeField] protected LayerMask enemyMask;
 
     public bool CanMove { get => canMove; set => canMove = value; }
     public bool IsMoving { get => isMoving; set => isMoving = value; }
     public bool IsJumping { get => isJumping; set => isJumping = value; }
+    public Animator Animator { get => animator; set => animator = value; }
 
     // Player's Action
 
@@ -46,10 +48,13 @@ public class Player : Entity
         {
             //Debug.Log("Kuduna Loncat euy");
             //rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
+            this.Animator.Play("Rama_Jump");
+            this.Animator.SetBool("Jumping", true);
             rb.velocity = new Vector2(rb.velocity.x, JumpDistance);
             JumpCount--;
         }
         if (CheckGround()) {
+            this.Animator.SetBool("Jumping", false);
             IsJumping = false;
             JumpCount = 1;
         }
@@ -86,7 +91,7 @@ public class Player : Entity
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Attacking");
-
+            this.Animator.Play("Rama_MeleeAttack");
             foreach (Collider2D enemy in enemies)
             {
                 Debug.Log("Hit enemy");

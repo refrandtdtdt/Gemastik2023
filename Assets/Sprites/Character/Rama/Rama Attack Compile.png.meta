@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 20b7b3e3942dad948b9b5b316045341c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 850
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rama Attack Compile_0
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2200
+        width: 1235
+        height: 1871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a2cd3b08cdc3d4eaa62ed50906a641
+      internalID: 1583315378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_1
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 2178
+        width: 1204
+        height: 1861
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bed4cf1f083aab429af408a6f236028
+      internalID: 1448612207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_2
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2182
+        width: 1097
+        height: 1857
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79e27cb1bd4e7b43a41ed8968a7941c
+      internalID: -272368332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_3
+      rect:
+        serializedVersion: 2
+        x: 3901
+        y: 2178
+        width: 1307
+        height: 1870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177accc4f81bd5342be210faa6d2386b
+      internalID: -388236494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_4
+      rect:
+        serializedVersion: 2
+        x: 5096
+        y: 2147
+        width: 1222
+        height: 1857
+      alignment: 9
+      pivot: {x: 0.53704506, y: 0.50406283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d6920c250dbd24384cf9f8dc6f80be
+      internalID: -384064942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_5
+      rect:
+        serializedVersion: 2
+        x: 6377
+        y: 2128
+        width: 1252
+        height: 1951
+      alignment: 9
+      pivot: {x: 0.54820997, y: 0.49226558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e6ca0a95db8eb4586e7d6f8e897c75
+      internalID: -96846055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 150
+        width: 1405
+        height: 1844
+      alignment: 9
+      pivot: {x: 0.5801485, y: 0.5193744}
+      border: {x: 300, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89125c638b138d4b8d56bcee9718631
+      internalID: -1789164491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_7
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 150
+        width: 1225
+        height: 1848
+      alignment: 9
+      pivot: {x: 0.5560417, y: 0.521228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65246d7810a207744baa1e1c29cd0e4d
+      internalID: 1450533033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_8
+      rect:
+        serializedVersion: 2
+        x: 2851
+        y: 1274
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f29c72fe24b81a499958499a4c00120
+      internalID: -277543738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_9
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 150
+        width: 1546
+        height: 1913
+      alignment: 9
+      pivot: {x: 0.3708801, y: 0.49786296}
+      border: {x: 0, y: 0, z: 457, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3534699cc9b7864a823112661e19cae
+      internalID: -1724514466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_10
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 150
+        width: 1493
+        height: 1873
+      alignment: 9
+      pivot: {x: 0.3595117, y: 0.4910411}
+      border: {x: 0, y: 0, z: 431, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21b66e37c959614490a5b8b4cf7ba85
+      internalID: 2131986302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_11
+      rect:
+        serializedVersion: 2
+        x: 6152
+        y: 150
+        width: 1239
+        height: 1871
+      alignment: 9
+      pivot: {x: 0.5299806, y: 0.50661784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3a617b2cea2ef428c2bf6e8eef47fe
+      internalID: -1043131238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Attack Compile_12
+      rect:
+        serializedVersion: 2
+        x: 7381
+        y: 151
+        width: 1235
+        height: 1870
+      alignment: 9
+      pivot: {x: 0.51832736, y: 0.5080693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce5843522c0fde498eee852953a0165
+      internalID: -786509275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Rama Attack Compile_0: 1583315378
+      Rama Attack Compile_1: 1448612207
+      Rama Attack Compile_10: 2131986302
+      Rama Attack Compile_11: -1043131238
+      Rama Attack Compile_12: -786509275
+      Rama Attack Compile_2: -272368332
+      Rama Attack Compile_3: -388236494
+      Rama Attack Compile_4: -384064942
+      Rama Attack Compile_5: -96846055
+      Rama Attack Compile_6: -1789164491
+      Rama Attack Compile_7: 1450533033
+      Rama Attack Compile_8: -277543738
+      Rama Attack Compile_9: -1724514466
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

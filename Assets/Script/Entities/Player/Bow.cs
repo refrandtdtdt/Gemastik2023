@@ -45,6 +45,7 @@ public class Bow : MonoBehaviour
         // mengecek apakah klik kiri tetikus sudah ditekan
         if (Input.GetMouseButtonDown(1))
         {
+            player.Animator.Play("Rama_BowAttack");
             Shoot();
         }
 

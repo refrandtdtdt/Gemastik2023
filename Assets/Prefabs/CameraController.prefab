@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 6609113522024939099}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &842211957790343068
 MonoBehaviour:
@@ -46,8 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camerapos: {fileID: 6609113522024939099}
-  playerpos: {fileID: 0}
-  followspeed: 0.1
+  followspeed: 0.07
 --- !u!1 &7299217505268063950
 GameObject:
   m_ObjectHideFlags: 0
