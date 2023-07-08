@@ -11,13 +11,19 @@ public class Enemy : Entity
     {
         if (movingDirection.Equals("Left"))
         {
-            transform.position += new Vector3(-Speed*Time.deltaTime, 0);
+            //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (movingDirection.Equals("Right"))
         {
-            transform.position += new Vector3(Speed * Time.deltaTime, 0);
+            rb.velocity = new Vector2(Speed, rb.velocity.y);
+            //transform.position += new Vector3(Speed * Time.deltaTime, 0);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
 

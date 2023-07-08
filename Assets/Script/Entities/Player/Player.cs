@@ -14,14 +14,20 @@ public class Player : Entity
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-Speed*Time.deltaTime, 0);
+            //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
             MadepMana = Hadap.Kiri;
         }
         else if (Input.GetKey(KeyCode.D)){
-            transform.position += new Vector3(Speed * Time.deltaTime, 0);
+            //transform.position += new Vector3(Speed * Time.deltaTime, 0);
+            rb.velocity = new Vector2(Speed, rb.velocity.y);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
             MadepMana = Hadap.Kanan;
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
     /**

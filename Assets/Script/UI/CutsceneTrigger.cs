@@ -15,19 +15,9 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField] private TriggerType type;
     private bool enter = false;
 
-    private void OnValidate()
-    {
-        if(GetComponent<Collider2D>() == null && type != TriggerType.onStart)
-        {
-            gameObject.AddComponent<BoxCollider2D>().isTrigger = true;
-        }
-        if(type == TriggerType.onStart && GetComponent<Collider2D>() != null)
-        {
-            //Destroy(GetComponent<Collider2D>().gameObject);
-        }
-    }
     private void Start()
     {
+        if (type != TriggerType.onStart) return;
         manager.StartCutscene(cutscene);
         Destroy(gameObject);
     }
@@ -40,7 +30,7 @@ public class CutsceneTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.TryGetComponent<Player>(out _))
+        if (collision.gameObject.TryGetComponent<Player>(out _))
         {
             switch (type)
             {
