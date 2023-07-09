@@ -1776,9 +1776,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1265137804}
   - component: {fileID: 1265137806}
-  - component: {fileID: 1265137805}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Trivia Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,39 +1791,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265137803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.4832153}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.09, y: -0.06, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1278292233}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1265137805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265137803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Filosofi Tumpeng (1)
-  message: 'Tumpeng adalah makanan khas masyarakat Jawa yang biasa disajikan saat
-    sedang merayakan atau syukuran. Makanan Tumpeng berupa nasi yang dibentuk seperti
-    gunung yang dikelilingi oleh lauk pauk dan sayur. Nasi tumpeng yang berbentuk
-    kerucut ditempatkan di tengah-tengah dan bermacam-macam lauk pauk disusun di
-    sekeliling kerucut tersebut. Penempatan nasi dan lauk pauk seperti ini disimbolkan
-    sebagai gunung dan tanah yang subur di sekelilingnya. Tanah di sekeliling gunung
-    dipenuhi dengan berbagai macam sayuran dari tumbuh-tumbuhan dan lauk-pauk. Itu
-    semua sebagai simbol atau tanda yang berasal dari alam, hasil tanah. Tanah menjadi
-    simbol kesejahteraan yang hakiki. Penempatan dan pemilihan lauk-pauk dalam tumpeng
-    juga didasari akan pengetahuan dan hubungan mereka dengan alam. Oleh karena itulah
-    lauk-pauk ditempatkan di sekeliling nasi karena memang dari sanalah mereka berasal. '
-  titleText: {fileID: 985492428}
-  messageText: {fileID: 1541370519}
 --- !u!212 &1265137806
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1866,7 +1839,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1735398522, guid: 4e99de1f1623cb44683d264aeb7c38e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1886,6 +1859,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278292233}
+  - component: {fileID: 1278292235}
+  - component: {fileID: 1278292234}
   m_Layer: 0
   m_Name: Trivia Interacable
   m_TagString: Untagged
@@ -1901,7 +1876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278292232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 101.2, y: -35.2, z: -2.4832153}
+  m_LocalPosition: {x: 100.89, y: -35.58, z: -2.4832153}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1909,6 +1884,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278292234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278292232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Filosofi Tumpeng (1)
+  message: 'Tumpeng adalah makanan khas masyarakat Jawa yang biasa disajikan saat
+    sedang merayakan atau syukuran. Makanan Tumpeng berupa nasi yang dibentuk seperti
+    gunung yang dikelilingi oleh lauk pauk dan sayur. Nasi tumpeng yang berbentuk
+    kerucut ditempatkan di tengah-tengah dan bermacam-macam lauk pauk disusun di
+    sekeliling kerucut tersebut. Penempatan nasi dan lauk pauk seperti ini disimbolkan
+    sebagai gunung dan tanah yang subur di sekelilingnya. Tanah di sekeliling gunung
+    dipenuhi dengan berbagai macam sayuran dari tumbuh-tumbuhan dan lauk-pauk. Itu
+    semua sebagai simbol atau tanda yang berasal dari alam, hasil tanah. Tanah menjadi
+    simbol kesejahteraan yang hakiki. Penempatan dan pemilihan lauk-pauk dalam tumpeng
+    juga didasari akan pengetahuan dan hubungan mereka dengan alam. Oleh karena itulah
+    lauk-pauk ditempatkan di sekeliling nasi karena memang dari sanalah mereka berasal. '
+  titleText: {fileID: 985492428}
+  messageText: {fileID: 1541370519}
+--- !u!58 &1278292235
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278292232}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.3
 --- !u!1 &1289416289
 GameObject:
   m_ObjectHideFlags: 0
