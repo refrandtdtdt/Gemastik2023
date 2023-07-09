@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 
 public class Rama : Player
 {
+    private float startShootingTime;
     void Start()
     {
         SetId(1);
@@ -17,6 +18,7 @@ public class Rama : Player
         MadepMana = Hadap.Kanan;
         Scale = transform.localScale;
         Animator = GetComponent<Animator>();
+        startShootingTime = Time.deltaTime;
     }
 
     void Update()
