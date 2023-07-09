@@ -35,6 +35,7 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if (collider.gameObject.CompareTag("Player")) { return; }
         kenaCollider = true;
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
