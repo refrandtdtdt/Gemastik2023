@@ -62,7 +62,7 @@ public class Player : Entity
     }
 
 
-    private bool CheckGround()
+    protected bool CheckGround()
     {
         Collider2D playerCollider = GetComponent<BoxCollider2D>();
         Vector2 raycastPos = playerCollider.bounds.center;

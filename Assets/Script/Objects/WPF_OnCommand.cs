@@ -9,6 +9,12 @@ public class WPF_OnCommand : WaypointFollower
     public bool Triggered { get => triggered; set => triggered = value; }
 
     // Update is called once per frame
+
+    private void OnValidate()
+    {
+        transform.position = Waypoints[CurrentWaypointIndex].transform.position;
+    }
+
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, Waypoints[CurrentWaypointIndex].transform.position, Time.deltaTime * Speed);

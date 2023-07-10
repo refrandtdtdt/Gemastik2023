@@ -10,9 +10,10 @@ public class Rama : Player
         SetId(1);
         SetDescription("Karakter utama dari ini, memiliki senjata panah idk the name lmao");
         Speed = 10f;
-        JumpDistance = 15;
+        JumpDistance = 12.5f;
         SetMaxHealth(100);
         SetHealth(100);
+        AttackPower = 20;
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         MadepMana = Hadap.Kanan;
@@ -43,7 +44,7 @@ public class Rama : Player
                 if(Animator.GetBool("Moving"))
                     Animator.SetBool("Moving", false);
             }
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.Space) && CheckGround()) {
                 IsJumping = true;
             }
             Attack();

@@ -359,6 +359,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1511010622}
     m_Modifications:
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0000012884996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4588663e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 5291195254691877258, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Name
       value: PuzzlePatform_A4
@@ -691,6 +699,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1511010622}
     m_Modifications:
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000012884996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4588663e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 5291195254691877258, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Name
       value: PuzzlePatform_A2
@@ -774,6 +790,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1511010622}
     m_Modifications:
+    - target: {fileID: 4228537485464997521, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: currentWaypointIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000003865499
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4588663e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 5291195254691877258, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Name
       value: PuzzlePatform_A3
@@ -3976,11 +4008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211589442778298077, guid: 85dac9b2f9bf9df4fbcbc3757cb92389, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.58
+      value: 125.38
       objectReference: {fileID: 0}
     - target: {fileID: 3211589442778298077, guid: 85dac9b2f9bf9df4fbcbc3757cb92389, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -35.04
+      value: -65.51
       objectReference: {fileID: 0}
     - target: {fileID: 3211589442778298077, guid: 85dac9b2f9bf9df4fbcbc3757cb92389, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4541,6 +4573,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1511010622}
     m_Modifications:
+    - target: {fileID: 4228537485464997521, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: currentWaypointIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000025769991
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4588663e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 5291195254691877258, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Name
       value: PuzzlePatform_A1
