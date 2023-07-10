@@ -43,10 +43,11 @@ public class Bow : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // mengecek apakah klik kiri tetikus sudah ditekan
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && (Time.time - player.StartShootingTime > 3f))
         {
             player.Animator.Play("Rama_BowAttack");
             Shoot();
+            player.StartShootingTime = Time.time;
         }
 
         // memunculkan titik trajektori

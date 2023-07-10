@@ -7,11 +7,12 @@ public class Player : Entity
     private bool isJumping = false;
     private Animator animator;
     [SerializeField] protected LayerMask enemyMask;
-
+    private float startShootingTime;
     public bool CanMove { get => canMove; set => canMove = value; }
     public bool IsMoving { get => isMoving; set => isMoving = value; }
     public bool IsJumping { get => isJumping; set => isJumping = value; }
     public Animator Animator { get => animator; set => animator = value; }
+    public float StartShootingTime { get => startShootingTime; set => startShootingTime = value; }
 
     // Player's Action
 
