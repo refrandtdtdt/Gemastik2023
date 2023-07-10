@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : Entity
@@ -14,6 +15,8 @@ public class Player : Entity
     public bool IsJumping { get => isJumping; set => isJumping = value; }
     public Animator Animator { get => animator; set => animator = value; }
 
+    //utility
+    private int multiplier = 1;
     // Player's Action
 
     override
@@ -24,20 +27,18 @@ public class Player : Entity
             //Vector3 destination = new Vector3(transform.position.x - Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed*Time.deltaTime*2);
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
-            rb.velocity = new Vector2(-Speed, rb.velocity.y);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y+multiplier*0.1f);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
-            
-            return;
         }
-        if (MadepMana == Hadap.Kanan)
+        else if (MadepMana == Hadap.Kanan)
         {
             //Vector3 destination = new Vector3(transform.position.x + Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed * Time.deltaTime*2);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
-            rb.velocity = new Vector2(Speed, rb.velocity.y);
+            rb.velocity = new Vector2(Speed, rb.velocity.y+multiplier*0.1f);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
-            return;
         }
+        multiplier *= -1;
         
     }
     /**
@@ -104,7 +105,14 @@ public class Player : Entity
                 {
                     Debug.Log("Hit enemy");
                     Enemy theEnemy = enemy.GetComponent<Enemy>();
-                    enemy.GetComponent<EnemyAI>().canMove = false;
+                    try
+                    {
+                        enemy.GetComponent<EnemyAI>().canMove = false;
+                    }
+                    catch(NullReferenceException e)
+                    {
+
+                    }
                     theEnemy.SetHealth(theEnemy.GetHealth() - AttackPower);
                     Rigidbody2D enemyrb = enemy.GetComponent<Rigidbody2D>();
                     Vector2 knockback = new Vector2(400f,200f);
