@@ -5,6 +5,7 @@ public class Player : Entity
     private bool canMove = true;
     private bool isMoving = false;
     private bool isJumping = false;
+    private bool meleehit = false;
     private Animator animator;
     [SerializeField] protected LayerMask enemyMask;
     private float startShootingTime;
@@ -12,7 +13,6 @@ public class Player : Entity
     public bool IsMoving { get => isMoving; set => isMoving = value; }
     public bool IsJumping { get => isJumping; set => isJumping = value; }
     public Animator Animator { get => animator; set => animator = value; }
-    public float StartShootingTime { get => startShootingTime; set => startShootingTime = value; }
 
     // Player's Action
 
@@ -83,21 +83,38 @@ public class Player : Entity
         Debug.DrawRay(raycastPos + new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, raycastDist), 2 * raycastDist * Vector2.right, rayColor);
-        return hit.collider != null;
+        
+        return hit.collider != null && rb.velocity.y >= -0.1 && rb.velocity.y <= 0.1f;
     }
 
     public void Attack()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, AttackRadius, enemyMask);
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Attacking");
             this.Animator.Play("Rama_MeleeAttack");
-            foreach (Collider2D enemy in enemies)
+            meleehit = true;
+        }
+        if (attackPoint.activeSelf)
+        {
+            if (meleehit)
             {
-                Debug.Log("Hit enemy");
-                Enemy theEnemy = enemy.GetComponent<Enemy>();
-                theEnemy.SetHealth(theEnemy.GetHealth() - AttackPower);
+                Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, AttackRadius, enemyMask);
+                foreach (Collider2D enemy in enemies)
+                {
+                    Debug.Log("Hit enemy");
+                    Enemy theEnemy = enemy.GetComponent<Enemy>();
+                    enemy.GetComponent<EnemyAI>().canMove = false;
+                    theEnemy.SetHealth(theEnemy.GetHealth() - AttackPower);
+                    Rigidbody2D enemyrb = enemy.GetComponent<Rigidbody2D>();
+                    Vector2 knockback = new Vector2(400f,200f);
+                    if(MadepMana == Hadap.Kiri)
+                    {
+                        knockback.x = -knockback.x;
+                    }
+                    enemyrb.AddForce(knockback);
+                }
+                meleehit = false;
             }
         }
     }

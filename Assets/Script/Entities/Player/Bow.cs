@@ -6,6 +6,7 @@ using UnityEngine;
 public class Bow : MonoBehaviour
 {
     [SerializeField] private Player player;
+    [SerializeField] private GameObject trigger;
     public GameObject anakPanah;
     public float kekuatanLontaran;
     public Transform shotPoint;
@@ -14,7 +15,9 @@ public class Bow : MonoBehaviour
     GameObject[] titik_titik;
     public int banyakTitik;
     public float jarakAntarTitik;
+    public float cooldownTimer = 3f;
     private Vector2 direction;
+    private bool shot;
 
     // Start is called before the first frame update
     void Start()
@@ -42,18 +45,37 @@ public class Bow : MonoBehaviour
         angle = Mathf.Clamp(angle, -90f, 90f);
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
+        if(cooldownTimer < 3f)
+        {
+            cooldownTimer += Time.deltaTime;
+        }
+
         // mengecek apakah klik kiri tetikus sudah ditekan
-        if (Input.GetMouseButtonDown(1) && (Time.time - player.StartShootingTime > 3f))
+        if (Input.GetMouseButtonDown(1) && (cooldownTimer >= 3f))
         {
             player.Animator.Play("Rama_BowAttack");
-            Shoot();
-            player.StartShootingTime = Time.time;
+            //Shoot();
+            cooldownTimer = 0f;
         }
 
         // memunculkan titik trajektori
         for (int i = 0; i < banyakTitik; i++)
         {
             titik_titik[i].transform.position = PosisiTitik(i * jarakAntarTitik);
+        }
+
+        if (trigger.activeSelf)
+        {
+            if (shot)
+            {
+                return;
+            }
+            Shoot();  
+            shot = true;
+        } 
+        else
+        {
+            shot = false;
         }
     }
 

@@ -12,10 +12,12 @@ public class EnemyAI : MonoBehaviour
     public float speed;
     public float nextWaypointDistance = 25f;
     public Enemy enemyObject;
+    [HideInInspector] public bool canMove = true;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
+    bool inTimer = false;
 
     Seeker seeker;
     Rigidbody2D rb;
@@ -49,6 +51,15 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!canMove)
+        {
+            if (inTimer)
+            {
+                return;
+            }
+            StartCoroutine(StopTimer(0.5f));
+            inTimer = true;
+        }
         if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Recalculate Graph");
@@ -98,5 +109,12 @@ public class EnemyAI : MonoBehaviour
         {
             currentWaypoint++;
         }
+    }
+
+    IEnumerator StopTimer(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        canMove = true;
+        inTimer = false;
     }
 }

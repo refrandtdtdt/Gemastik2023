@@ -18,7 +18,6 @@ public class Rama : Player
         MadepMana = Hadap.Kanan;
         Scale = transform.localScale;
         Animator = GetComponent<Animator>();
-        StartShootingTime = Time.time;
     }
 
     void Update()

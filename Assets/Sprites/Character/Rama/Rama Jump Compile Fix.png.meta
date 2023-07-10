@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 08064846e1e16c140b99f25e0cb7161e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2387
+        width: 1436
+        height: 2197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aeb51fdbe99c74baf1ddc6c70fe1a5
+      internalID: 1750843190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_1
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2387
+        width: 1324
+        height: 2160
+      alignment: 9
+      pivot: {x: 0.54690564, y: 0.4958928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9da1deca38305f43a40342cba7b91bc
+      internalID: -585446332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_2
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 2427
+        width: 1270
+        height: 2116
+      alignment: 9
+      pivot: {x: 0.5609152, y: 0.4862896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84020195d71f08246a4a9ff8f37ed62b
+      internalID: 1551819828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_3
+      rect:
+        serializedVersion: 2
+        x: 4148
+        y: 2488
+        width: 1273
+        height: 2059
+      alignment: 9
+      pivot: {x: 0.5807229, y: 0.46340084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2725b0453211547906d54294d68f2e
+      internalID: -1558757278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_4
+      rect:
+        serializedVersion: 2
+        x: 5477
+        y: 2586
+        width: 1272
+        height: 1961
+      alignment: 9
+      pivot: {x: 0.57442796, y: 0.4482738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b4a6d555946fa4f81acec5cd14ec04
+      internalID: -997714808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 193
+        width: 1274
+        height: 2059
+      alignment: 9
+      pivot: {x: 0.5846933, y: 0.47205135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7328cfd8aca0d14f9f076a669a1ed4c
+      internalID: 1021884867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_6
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 204
+        width: 1266
+        height: 2116
+      alignment: 9
+      pivot: {x: 0.585925, y: 0.48022732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1281f54d21eed8e4882ed4243f0d089a
+      internalID: -1221768308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_7
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 160
+        width: 1323
+        height: 2160
+      alignment: 9
+      pivot: {x: 0.55838376, y: 0.48659006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6b353dec360c9459a3924257b8ef59
+      internalID: 1222431115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rama Jump Compile Fix_8
+      rect:
+        serializedVersion: 2
+        x: 4302
+        y: 163
+        width: 1434
+        height: 2197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4135e8591e39e804ea0aa831d4667092
+      internalID: -22956146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Rama Jump Compile Fix_0: 1750843190
+      Rama Jump Compile Fix_1: -585446332
+      Rama Jump Compile Fix_2: 1551819828
+      Rama Jump Compile Fix_3: -1558757278
+      Rama Jump Compile Fix_4: -997714808
+      Rama Jump Compile Fix_5: 1021884867
+      Rama Jump Compile Fix_6: -1221768308
+      Rama Jump Compile Fix_7: 1222431115
+      Rama Jump Compile Fix_8: -22956146
+      Rama Jump Compile Fix_9: 550751783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

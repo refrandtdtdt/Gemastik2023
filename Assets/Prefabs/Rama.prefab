@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8900091923900152189
 Transform:
   m_ObjectHideFlags: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833066742597912569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44, y: 0.46, z: 0}
+  m_LocalPosition: {x: 1.44, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -266,6 +266,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bow
       objectReference: {fileID: 0}
+    - target: {fileID: 4114973501301393250, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
+      propertyPath: m_Name
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114973501301393250, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4482160385207123033, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03
@@ -322,6 +330,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7136619799055561193}
+    - target: {fileID: 4615430701216851713, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 4549300900843419114}
     - target: {fileID: 7017970342832955476, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.12388693
@@ -340,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7912470757096894850, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -350,5 +362,10 @@ PrefabInstance:
 --- !u!4 &4066959146787020287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4488314508146765687, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
+  m_PrefabInstance: {fileID: 448406714792145544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4549300900843419114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4114973501301393250, guid: b15db223c718c4640a7b23d7f7a63897, type: 3}
   m_PrefabInstance: {fileID: 448406714792145544}
   m_PrefabAsset: {fileID: 0}

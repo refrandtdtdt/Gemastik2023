@@ -1,32 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class Trivia : MonoBehaviour, Interactable
 {
     [SerializeField] private string title;
+    [TextArea(2,40)]
     [SerializeField] private string message;
-    [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI messageText;
+    
+    private TriviaPanel panel;
     private Player player;
     private bool insideYourMom = false;
     public void Interact()
     {
-        titleText.enabled = !titleText.enabled;
-        messageText.enabled = !messageText.enabled;
         player.CanMove = !player.CanMove;
-        ShowMessage();
+        panel.ShowMessage(title, message);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        titleText.enabled = false;
-        messageText.enabled = false;
+        panel = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TriviaPanel>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         //cek apakah dia dapet input
@@ -52,11 +47,5 @@ public class Trivia : MonoBehaviour, Interactable
             player = null;
             insideYourMom = false;
         }
-    }
-
-    public void ShowMessage()
-    {
-        titleText.text = title;
-        messageText.text = message;
     }
 }

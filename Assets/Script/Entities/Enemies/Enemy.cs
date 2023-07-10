@@ -70,7 +70,7 @@ public class Enemy : Entity
         Debug.DrawRay(raycastPos + new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, raycastDist), 2 * raycastDist * Vector2.right, rayColor);
-        return hit.collider != null;
+        return hit.collider != null && rb.velocity.y >= -0.1f && rb.velocity.y <= 0.1f;
     }
 
     // Start is called before the first frame update
