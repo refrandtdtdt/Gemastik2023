@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: asset 3 Fix_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2060
+        width: 611
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d92ad4236488c49bdd6cd5b12e4978
+      internalID: 45045743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_1
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 2071
+        width: 576
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfa773a96583954f933161111a77411
+      internalID: -331549284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1914
+        width: 1169
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3c3fc9e49e4a845ba73f5de3ce6700
+      internalID: -956581674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1727
+        width: 1317
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd01cd1df78e614ba36c6153ec9baf8
+      internalID: -537223393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_7
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1148
+        width: 554
+        height: 637
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85e86ef59a917849b8cca2de779ef90
+      internalID: -1018898159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_19
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 21
+        width: 1402
+        height: 1890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e28d772b3a25c4287daadfc7642d2f
+      internalID: 370991250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1208
+        width: 485
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fabb3766b8cea94f89a56795dc58e7c
+      internalID: 879850315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_5
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1312
+        width: 445
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c110451d71ebcb4b9fcf24afba0d1cd
+      internalID: 1576991630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_6
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1300
+        width: 248
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8c7a0390878dd4b8958cef7634fc7f
+      internalID: -1022305576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 911
+        width: 328
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021cdfaafc4ed7a4ba8844d8acc56557
+      internalID: 601361442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_11
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 805
+        width: 427
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1624735b4cda24d8d0031cc20b4048
+      internalID: 1638920861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_18
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 101
+        width: 1021
+        height: 1476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac4ceca50260cb48994c743ae06f7b0
+      internalID: -1097235433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 740
+        width: 388
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8ca4e746435a34288b1fe558f603fb
+      internalID: 1873127771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_10
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 750
+        width: 294
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed4afc941a45ea49b9c2753e35c30f9
+      internalID: -214573477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_17
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 93
+        width: 712
+        height: 970
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2b9f0e423f1da4a9a2e4a0878488bf
+      internalID: -1679666352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 510
+        width: 211
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad8121ddad4c1f4fbaaa56ded98b7ec
+      internalID: -830592973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_14
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 448
+        width: 624
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69a2d4c8be5ec34f98bda7f49d6f64c
+      internalID: 1661759355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 321
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077b3be3ecc3d5747a8419cdb9dd6c1e
+      internalID: -152714282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_16
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 32
+        width: 287
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dada97db826e89746939454bb6b4620d
+      internalID: 813850708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_15
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 52
+        width: 427
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6c5dd7b6665ae49b1f66f6741f0029
+      internalID: 2020956341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +539,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      asset 3 Fix_0: -331549284
+      asset 3 Fix_1: 601361442
+      asset 3 Fix_10: -214573477
+      asset 3 Fix_11: 1638920861
+      asset 3 Fix_12: -830592973
+      asset 3 Fix_13: -152714282
+      asset 3 Fix_14: 1661759355
+      asset 3 Fix_15: 2020956341
+      asset 3 Fix_16: 813850708
+      asset 3 Fix_17: -1679666352
+      asset 3 Fix_18: -1097235433
+      asset 3 Fix_19: 370991250
+      asset 3 Fix_2: 370991250
+      asset 3 Fix_21: 1624876885
+      asset 3 Fix_22: -1841194000
+      asset 3 Fix_23: -1930507758
+      asset 3 Fix_24: 1699652036
+      asset 3 Fix_25: 790799498
+      asset 3 Fix_26: -152714282
+      asset 3 Fix_28: 1411141261
+      asset 3 Fix_29: -537223393
+      asset 3 Fix_3: 2058017154
+      asset 3 Fix_30: 496007890
+      asset 3 Fix_31: 1988896111
+      asset 3 Fix_32: -1235507520
+      asset 3 Fix_33: -1134723042
+      asset 3 Fix_34: -1928033429
+      asset 3 Fix_35: 1805823956
+      asset 3 Fix_36: 813850708
+      asset 3 Fix_38: 1058849178
+      asset 3 Fix_4: 879850315
+      asset 3 Fix_40: -1909677977
+      asset 3 Fix_41: 1748127157
+      asset 3 Fix_42: 958200471
+      asset 3 Fix_43: 1323393593
+      asset 3 Fix_44: 763608968
+      asset 3 Fix_45: -791318833
+      asset 3 Fix_46: -868986477
+      asset 3 Fix_47: 879850315
+      asset 3 Fix_5: 1576991630
+      asset 3 Fix_6: -1022305576
+      asset 3 Fix_7: -1018898159
+      asset 3 Fix_8: 1873127771
+      asset 3 Fix_9: 601361442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
