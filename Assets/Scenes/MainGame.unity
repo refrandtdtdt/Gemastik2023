@@ -778,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 830105816217501239, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1780600864138302935, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -800,6 +800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4347227103233694563, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4772518429189429380, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -819,6 +823,10 @@ PrefabInstance:
     - target: {fileID: 4772518429189429380, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151397927803901274, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
+      propertyPath: m_text
+      value: Lorem Ipsum dolor sit amet wokaokoawkoawdoa
       objectReference: {fileID: 0}
     - target: {fileID: 7246817824020522150, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_AnchorMax.y
