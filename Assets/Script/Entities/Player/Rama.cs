@@ -47,6 +47,12 @@ public class Rama : Player
             }
             Attack();
         }
+        else
+        {
+            IsMoving = false;
+            if (Animator.GetBool("Moving"))
+                Animator.SetBool("Moving", false);
+        }
     }
 
     private void FixedUpdate()
