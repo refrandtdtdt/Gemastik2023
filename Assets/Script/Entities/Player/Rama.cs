@@ -29,7 +29,8 @@ public class Rama : Player
                 IsMoving = true;
                 if (!Animator.GetBool("Moving"))
                     Animator.SetBool("Moving", true);
-            }else if (Input.GetKey(KeyCode.D)) 
+            }
+            else if (Input.GetKey(KeyCode.D)) 
             {
                 MadepMana = Hadap.Kanan;
                 IsMoving = true;
@@ -57,6 +58,7 @@ public class Rama : Player
 
     private void FixedUpdate()
     {
+        Multiplier *= -1;
         if (IsMoving)
         {
             Move();

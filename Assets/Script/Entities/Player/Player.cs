@@ -14,6 +14,7 @@ public class Player : Entity
     public bool IsMoving { get => isMoving; set => isMoving = value; }
     public bool IsJumping { get => isJumping; set => isJumping = value; }
     public Animator Animator { get => animator; set => animator = value; }
+    public int Multiplier { get => multiplier; set => multiplier = value; }
 
     //utility
     private int multiplier = 1;
@@ -27,7 +28,7 @@ public class Player : Entity
             //Vector3 destination = new Vector3(transform.position.x - Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed*Time.deltaTime*2);
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
-            rb.velocity = new Vector2(-Speed, rb.velocity.y+multiplier*0.1f);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y+Multiplier*0.1f);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (MadepMana == Hadap.Kanan)
@@ -35,10 +36,10 @@ public class Player : Entity
             //Vector3 destination = new Vector3(transform.position.x + Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed * Time.deltaTime*2);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
-            rb.velocity = new Vector2(Speed, rb.velocity.y+multiplier*0.1f);
+            rb.velocity = new Vector2(Speed, rb.velocity.y+Multiplier*0.1f);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
-        multiplier *= -1;
+        
         
     }
     /**
