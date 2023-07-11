@@ -529,6 +529,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: asset 3 Fix_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1685
+        width: 1394
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d05872f8ab11a24eb0e898bb981f8eb
+      internalID: 683709877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -553,6 +574,7 @@ TextureImporter:
       asset 3 Fix_18: -1097235433
       asset 3 Fix_19: 370991250
       asset 3 Fix_2: 370991250
+      asset 3 Fix_20: 857607892
       asset 3 Fix_21: 1624876885
       asset 3 Fix_22: -1841194000
       asset 3 Fix_23: -1930507758

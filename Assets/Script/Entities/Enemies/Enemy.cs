@@ -7,17 +7,21 @@ public class Enemy : Entity
     public string movingDirection = "Idle";
     public bool isJumping = false;
     private float startTime;
+    private float multiplier = 1f;
+    [SerializeField] protected LayerMask playerMask;
+    protected float Multiplier { get => multiplier; set => multiplier = value; }
+
     public override void Move()
     {
         if (movingDirection.Equals("Left"))
         {
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
-            rb.velocity = new Vector2(-Speed, rb.velocity.y);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y+multiplier*0.2f);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (movingDirection.Equals("Right"))
         {
-            rb.velocity = new Vector2(Speed, rb.velocity.y);
+            rb.velocity = new Vector2(Speed, rb.velocity.y+multiplier*0.2f);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
@@ -54,7 +58,7 @@ public class Enemy : Entity
     {
         Collider2D playerCollider = GetComponent<BoxCollider2D>();
         Vector2 raycastPos = playerCollider.bounds.center;
-        float raycastDist = playerCollider.bounds.extents.y + 0.1f;
+        float raycastDist = playerCollider.bounds.extents.y + 0.2f;
 
         RaycastHit2D hit = Physics2D.BoxCast(raycastPos, playerCollider.bounds.size, 0f, Vector2.down, raycastDist, this.LayerMask);
         Color rayColor;
@@ -73,24 +77,8 @@ public class Enemy : Entity
         return hit.collider != null && rb.velocity.y >= -0.1f && rb.velocity.y <= 0.1f;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public virtual void Attack()
     {
-        SetId(1);
-        SetDescription("musuh");
-        Speed = 7f;
-        JumpDistance = 12;
-        SetMaxHealth(100);
-        SetHealth(100);
-        rb = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
-        Scale = transform.localScale;
-        startTime = Time.time;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

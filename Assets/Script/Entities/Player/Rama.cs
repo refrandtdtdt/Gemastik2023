@@ -8,8 +8,8 @@ public class Rama : Player
     {
         SetId(1);
         SetDescription("Karakter utama dari ini, memiliki senjata panah idk the name lmao");
-        Speed = 10f;
-        JumpDistance = 12.5f;
+        Speed = 7.5f;
+        JumpDistance = 11f;
         SetMaxHealth(100);
         SetHealth(100);
         AttackPower = 20;
@@ -53,6 +53,18 @@ public class Rama : Player
             IsMoving = false;
             if (Animator.GetBool("Moving"))
                 Animator.SetBool("Moving", false);
+        }
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (IsMoving) return;
+        if (mousePos.x >= transform.position.x)
+        {
+            transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
+            MadepMana = Hadap.Kanan;
+        }
+        else
+        {
+            transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
+            MadepMana = Hadap.Kiri;
         }
     }
 
