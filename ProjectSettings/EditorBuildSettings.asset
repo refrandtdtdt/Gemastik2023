@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 293645c15946d0f499454d2727c0288d
   - enabled: 1
-    path: Assets/Scenes/Intro Ferdi.unity
-    guid: de584d4c32e18074bab735bf98dfe9c0
+    path: Assets/Scenes/Game Over.unity
+    guid: 68687894a5a26cb4a961c682c56d355d
   m_configObjects: {}

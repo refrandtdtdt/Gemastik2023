@@ -108,7 +108,6 @@ public class PauseMenu : MonoBehaviour
     public void SceneGame()
     {
         SceneManager.LoadScene("MainGame");
-        SceneManager.LoadScene("Intro Ferdi");
     }
 
     public void QuitGame()
