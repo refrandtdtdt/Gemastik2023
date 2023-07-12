@@ -29,8 +29,8 @@ public class EnemyAI : MonoBehaviour
         enemyObject = gameObject.GetComponent<Enemy>();
         speed = enemyObject.Speed;
         target = GameObject.FindGameObjectWithTag("Player").transform;
-
-        InvokeRepeating("UpdatePath", 0f, .1f);
+        enemyObject.MadepMana = Hadap.Kanan;
+        InvokeRepeating("UpdatePath", 0f, .5f);
     }
 
     void UpdatePath()
@@ -83,10 +83,12 @@ public class EnemyAI : MonoBehaviour
             if (direction.x < 0)
             {
                 enemyObject.movingDirection = "Left";
+                enemyObject.MadepMana = Hadap.Kiri;
                 enemyObject.Move();
             }
             else if (direction.x > 0)
             {
+                enemyObject.MadepMana = Hadap.Kanan;
                 enemyObject.movingDirection = "Right";
                 enemyObject.Move();
             }

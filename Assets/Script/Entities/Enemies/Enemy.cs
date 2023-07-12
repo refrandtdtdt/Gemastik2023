@@ -14,14 +14,14 @@ public class Enemy : Entity
 
     public override void Move()
     {
-        if (movingDirection.Equals("Left"))
+        if (movingDirection.Equals("Left") && MadepMana == Hadap.Kiri)
         {
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
             animator.SetBool("Moving", true);
             rb.velocity = new Vector2(-Speed, rb.velocity.y+multiplier*0.2f);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
-        else if (movingDirection.Equals("Right"))
+        else if (movingDirection.Equals("Right") && MadepMana == Hadap.Kanan)
         {
             rb.velocity = new Vector2(Speed, rb.velocity.y+multiplier*0.2f);
             animator.SetBool("Moving", true);
@@ -31,7 +31,7 @@ public class Enemy : Entity
         else
         {
             animator.SetBool("Moving", false);
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            rb.velocity = new Vector2(0, rb.velocity.y+ multiplier * 0.2f);
         }
     }
 
