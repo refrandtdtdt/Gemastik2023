@@ -810,7 +810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4228537485464997521, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: currentWaypointIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalScale.x
@@ -830,7 +830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.499998
+      value: 0.0000011216172
       objectReference: {fileID: 0}
     - target: {fileID: 5282891254001570504, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -866,7 +866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6476
+      value: -1.53
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -902,11 +902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Size.y
-      value: 0.9577683
+      value: 0.878773
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.021115825
+      value: -0.060613498
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_IsTrigger
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 890916478}
   - component: {fileID: 890916479}
   m_Layer: 0
-  m_Name: asset 3 Fix_18
+  m_Name: Pohon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1629,7 +1629,7 @@ GameObject:
   - component: {fileID: 1160843248}
   - component: {fileID: 1160843247}
   m_Layer: 0
-  m_Name: Tali
+  m_Name: Pohon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8031,7 +8031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6476
+      value: -1.5300006
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8067,11 +8067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Size.y
-      value: 0.9577683
+      value: 0.86620367
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.021115825
+      value: -0.06689817
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -8270,7 +8270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6476
+      value: -1.5300006
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8306,11 +8306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Size.y
-      value: 0.9577683
+      value: 0.86620367
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.021115825
+      value: -0.06689817
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -9026,7 +9026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6476
+      value: -1.5300006
       objectReference: {fileID: 0}
     - target: {fileID: 7628094741026198971, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9062,11 +9062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Size.y
-      value: 0.9577683
+      value: 0.86620367
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.021115825
+      value: -0.06689817
       objectReference: {fileID: 0}
     - target: {fileID: 8752197728008923297, guid: 1c4b3556403b9994a87b447ed9f1f47a, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
