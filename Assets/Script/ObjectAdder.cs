@@ -20,6 +20,7 @@ public class ObjectAdder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.GetComponent<Player>() == null) return;
         foreach (GameObject gameObject in enemyObjects)
         {
             gameObject.SetActive(true);

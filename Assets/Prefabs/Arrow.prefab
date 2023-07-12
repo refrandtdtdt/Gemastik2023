@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bow: {fileID: 0}
-  damage: 0
+  damage: 100
 --- !u!61 &5133455481982888897
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -83,7 +83,7 @@ public class Bow : MonoBehaviour
     {
         float vektorKecepatan = kekuatanLontaran;
         GameObject panahBaru = Instantiate(anakPanah, shotPoint.position, shotPoint.rotation);
-        int damage = panahBaru.GetComponent<Arrow>().Damage = (player.AttackPower * 3)/2;
+        int damage = panahBaru.GetComponent<Arrow>().Damage = player.AttackPower * 5;
         Debug.Log("Memunculkan Panah, Kerusakan = " + damage);
         
         if (player.MadepMana == Hadap.Kiri)
