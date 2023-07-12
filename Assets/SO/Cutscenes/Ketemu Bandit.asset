@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caa8fcea1a27284f84db6cb4ca853a2, type: 3}
+  m_Name: Ketemu Bandit
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: c6417d9a9130714459a8243becd18791, type: 3}
+  Dialogues:
+  - name: Bandit 1
+    portrait: {fileID: 2084290696, guid: 48e259480253d70478ee44c524f834fc, type: 3}
+    dialog: Wah ada sasaran empuk nih
+  - name: Rama
+    portrait: {fileID: 401591068, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: ada mau apa kalian?
+  - name: Bandit 1
+    portrait: {fileID: -1433098287, guid: 48e259480253d70478ee44c524f834fc, type: 3}
+    dialog: dari dapuranmu, sepertinya kamu adalah orang kaya
+  - name: Bandit 2
+    portrait: {fileID: 2084290696, guid: 48e259480253d70478ee44c524f834fc, type: 3}
+    dialog: gimana bos? sikat?
+  - name: Bandit
+    portrait: {fileID: 251902808, guid: 9ce13e1845c563c4ca7c18ee5945e7b2, type: 3}
+    dialog: Ayo, laksanakan!
