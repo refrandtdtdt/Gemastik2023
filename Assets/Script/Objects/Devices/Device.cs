@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public abstract class Device : MonoBehaviour, Interactable
 {
-    [SerializeField] protected ControlPanel UIpanel;
+    protected ControlPanel UIpanel;
     protected Player player;
     private bool near;
 
@@ -15,7 +15,7 @@ public abstract class Device : MonoBehaviour, Interactable
     }
     private void Start()
     {
-        //UIpanel = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<ControlPanel>();
+        UIpanel = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<ControlPanel>();
     }
     void Update()
     {

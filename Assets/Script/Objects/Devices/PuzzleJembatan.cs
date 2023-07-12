@@ -24,7 +24,7 @@ public class PuzzleJembatan : Device
 
     public override void Interact()
     {
-        if (UIpanel.gameObject.activeSelf)
+        if (UIpanel.Panel.activeSelf)
         {
             player.CanMove = true;
             UIpanel.StopUI();

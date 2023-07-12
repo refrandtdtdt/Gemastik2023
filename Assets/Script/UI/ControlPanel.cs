@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class ControlPanel : MonoBehaviour
 {
-    private GameObject buttonParent;
+    public GameObject Panel;
+    [SerializeField] private GameObject buttonParent;
     private List<GameObject> buttons = new List<GameObject>();
     [SerializeField] private GameObject buttonTemplate;
 
-    void OnValidate()
+    void Start()
     {
-        gameObject.SetActive(false);
-        buttonParent = gameObject.transform.GetChild(0).gameObject;
+        Panel.SetActive(false);
     }
 
     public void SetupUI(PuzzleJembatan puzzle)
     {
-        gameObject.SetActive(true);
+        Panel.SetActive(true);
         for (int i = 0; i < puzzle.buttonCount; i++)
         {
             buttons.Add(Instantiate(buttonTemplate, buttonParent.transform));
@@ -37,7 +37,7 @@ public class ControlPanel : MonoBehaviour
 
     public void StopUI()
     {
-        gameObject.SetActive(false);
+        Panel.SetActive(false);
         foreach (GameObject button in buttons)
         {
             Destroy(button);
