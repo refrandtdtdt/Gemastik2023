@@ -291,95 +291,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33d6d297e05ffa44eb565526072042f0, type: 3}
---- !u!1 &57831947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 57831948}
-  - component: {fileID: 57831950}
-  - component: {fileID: 57831949}
-  m_Layer: 11
-  m_Name: Trivia Interactable (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &57831948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57831947}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 148.7, y: 2.44, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 290851304}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &57831949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57831947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Tembang Macapat
-  message: Tembang macapat adalah sebuah karya sastra Jawa berupa puisi yang dilagukan.
-    Saat melagukan tembang macapat, terikat oleh aturan yaitu guru gatra, guru wilangan,
-    dan guru lagu. Guru gatra artinya banyaknya gatra(baris) dalam satu lagu/pada.
-    Kemudian guru wilangan artinya banyaknya larik(suku kata) pada satu gatra. Dan
-    guru lagu artinya akhiran suara pada tiap gatra, bisa a,i,u,e atau o. Ada 11
-    macam Tembang macapat. Yaitu Maskumambang, Mijil, Sinom, Kinanthi, Asmaradana,
-    Gambuh, Dandanggula, Durma, Pangkur, Megatruh, Pocung
---- !u!58 &57831950
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57831947}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
 --- !u!1 &59898859
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,98 +320,14 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 169320800}
-  - {fileID: 1099754899}
-  - {fileID: 448214605}
-  - {fileID: 729666205}
-  - {fileID: 57831948}
-  - {fileID: 997787115}
+  - {fileID: 1908653677}
+  - {fileID: 813281623}
+  - {fileID: 538511158}
+  - {fileID: 588075680}
+  - {fileID: 799918792}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &77604520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 77604521}
-  - component: {fileID: 77604522}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &77604521
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77604520}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1099754899}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &77604522
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77604520}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1735398522, guid: 4e99de1f1623cb44683d264aeb7c38e0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &79681999
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,183 +787,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &169320799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 169320800}
-  - component: {fileID: 169320802}
-  - component: {fileID: 169320801}
-  m_Layer: 11
-  m_Name: Trivia Interactable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &169320800
+--- !u!4 &169320800 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 9117570623207228496}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169320799}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.085781, y: -0.5838928, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1853794489}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &169320801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169320799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Filosofi Tumpeng (1)
-  message: 'Tumpeng adalah makanan khas masyarakat Jawa yang biasa disajikan saat
-    sedang merayakan atau syukuran. Makanan Tumpeng berupa nasi yang dibentuk seperti
-    gunung yang dikelilingi oleh lauk pauk dan sayur. Nasi tumpeng yang berbentuk
-    kerucut ditempatkan di tengah-tengah dan bermacam-macam lauk pauk disusun di
-    sekeliling kerucut tersebut. Penempatan nasi dan lauk pauk seperti ini disimbolkan
-    sebagai gunung dan tanah yang subur di sekelilingnya. Tanah di sekeliling gunung
-    dipenuhi dengan berbagai macam sayuran dari tumbuh-tumbuhan dan lauk-pauk. Itu
-    semua sebagai simbol atau tanda yang berasal dari alam, hasil tanah. Tanah menjadi
-    simbol kesejahteraan yang hakiki. Penempatan dan pemilihan lauk-pauk dalam tumpeng
-    juga didasari akan pengetahuan dan hubungan mereka dengan alam. Oleh karena itulah
-    lauk-pauk ditempatkan di sekeliling nasi karena memang dari sanalah mereka berasal. '
---- !u!58 &169320802
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169320799}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
---- !u!1 &172359461
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 172359462}
-  - component: {fileID: 172359463}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &172359462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172359461}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 448214605}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &172359463
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172359461}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -152714282, guid: 6a4e8b1855d38984c8d4c776a87eb0e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.21, y: 4.7110515}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &240198043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,174 +911,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &280586500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 280586501}
-  - component: {fileID: 280586502}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &280586501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280586500}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 997787115}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &280586502
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280586500}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -152714282, guid: 6a4e8b1855d38984c8d4c776a87eb0e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.21, y: 4.7110515}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &290851303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 290851304}
-  - component: {fileID: 290851305}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &290851304
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290851303}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 57831948}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &290851305
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290851303}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -152714282, guid: 6a4e8b1855d38984c8d4c776a87eb0e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.21, y: 4.7110515}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &290984839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,7 +1443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7246817824020522150, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7390767511700502159, guid: 2b4526103ad10c849b1beaaa9795857c, type: 3}
       propertyPath: m_Pivot.x
@@ -2414,91 +1901,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!1 &448214604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 448214605}
-  - component: {fileID: 448214607}
-  - component: {fileID: 448214606}
-  m_Layer: 11
-  m_Name: Trivia Interactable (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &448214605
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448214604}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 169.9, y: 22.2, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 172359462}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &448214606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448214604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Filosofi Tembang Macapat
-  message: 11 tembang macapat melambangkan fase kehidupan manusia dari sejak di dalam
-    kandungan hingga di akhirat. Urutannya yaitu  Maskumambang, Mijil, Sinom, Kinanthi,
-    Asmaradana, Gambuh, Dandanggula, Durma, Pangkur, Megatruh, Pocung.
---- !u!58 &448214607
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448214604}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
 --- !u!1 &460219773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,6 +2473,302 @@ MonoBehaviour:
   manager: {fileID: 913509467}
   cutscene: {fileID: 11400000, guid: 75e76a7f02bc3b548a82edafe9a64552, type: 2}
   type: 1
+--- !u!1001 &538511157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: title
+      value: Filosofi Tumpeng (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: message
+      value: "Dalam tradisi kenduri Slametan pada masyarakat Islam tradisional Jawa.
+        Menurut tradisi Islam Jawa, 'Tumpeng' merupakan akronim dalam bahasa Jawa
+        : yen metu kudu sing mempeng (bila keluar harus dengan sungguh-sungguh).
+        Lengkapnya, ada satu unit makanan lagi namanya \u201CBuceng\u201D, dibuat
+        dari ketan; akronim dari: yen mlebu kudu sing kenceng (bila masuk harus dengan
+        sungguh-sungguh) Sedangkan lauk-pauknya tumpeng, berjumlah 7 macam, angka
+        7 bahasa Jawa pitu, maksudnya Pitulungan (pertolongan)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+--- !u!4 &538511158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 538511157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &554603107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554603108}
+  - component: {fileID: 554603110}
+  - component: {fileID: 554603109}
+  m_Layer: 5
+  m_Name: Text (TMP) (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &554603108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554603107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226523139}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -20.79, y: -39.66}
+  m_SizeDelta: {x: 7.3158, y: 2.9012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &554603109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554603107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Tekan tombol pada mouse untuk menyerang
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &554603110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554603107}
+  m_CullTransparentMesh: 1
+--- !u!1001 &588075679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: title
+      value: Tembang Macapat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: message
+      value: Tembang macapat adalah sebuah karya sastra Jawa berupa puisi yang dilagukan.
+        Saat melagukan tembang macapat, terikat oleh aturan yaitu guru gatra, guru
+        wilangan, dan guru lagu. Guru gatra artinya banyaknya gatra(baris) dalam
+        satu lagu/pada. Kemudian guru wilangan artinya banyaknya larik(suku kata)
+        pada satu gatra. Dan guru lagu artinya akhiran suara pada tiap gatra, bisa
+        a,i,u,e atau o. Ada 11 macam Tembang macapat. Yaitu Maskumambang, Mijil,
+        Sinom, Kinanthi, Asmaradana, Gambuh, Dandanggula, Durma, Pangkur, Megatruh,
+        Pocung
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 148.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+--- !u!4 &588075680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 588075679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &600926154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3811,7 +3509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707105905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7435913, y: 3.46, z: -0.4657321}
+  m_LocalPosition: {x: -5.62, y: 4.49, z: -0.4657321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3950,7 +3648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.03, y: -20.4}
+  m_AnchoredPosition: {x: -126.32, y: -39.26}
   m_SizeDelta: {x: 4.8557, y: 2.9012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720083897
@@ -3973,11 +3671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tekan tombol
-
-    Left Click
-
-    untuk menyerang'
+  m_text: Gunakan F untuk berinteraksi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4054,95 +3748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720083895}
   m_CullTransparentMesh: 1
---- !u!1 &729666204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 729666205}
-  - component: {fileID: 729666207}
-  - component: {fileID: 729666206}
-  m_Layer: 11
-  m_Name: Trivia Interactable (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &729666205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729666204}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.06, y: -0.73, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1482218025}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &729666206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729666204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Filosofi Tumpeng (2)
-  message: "Dalam tradisi kenduri Slametan pada masyarakat Islam tradisional Jawa.
-    Menurut tradisi Islam Jawa, 'Tumpeng' merupakan akronim dalam bahasa Jawa : yen
-    metu kudu sing mempeng (bila keluar harus dengan sungguh-sungguh). Lengkapnya,
-    ada satu unit makanan lagi namanya \u201CBuceng\u201D, dibuat dari ketan; akronim
-    dari: yen mlebu kudu sing kenceng (bila masuk harus dengan sungguh-sungguh) Sedangkan
-    lauk-pauknya tumpeng, berjumlah 7 macam, angka 7 bahasa Jawa pitu, maksudnya
-    Pitulungan (pertolongan)."
---- !u!58 &729666207
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729666204}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
 --- !u!1 &735888904
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,6 +3900,86 @@ Transform:
   m_Father: {fileID: 1993620923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &799918791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: title
+      value: Serat Wedhatama
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: message
+      value: Serat Wedhatama terdiri dari tiga kata, yaitu Serat, Wedha, dan Tama.
+        Serat yang berarti tulisan, Wedha yang berarti ajaran, Tama yang berarti
+        utama. Serat Wedhatama adalah sebuah karya sastra Jawa Anyar yang ditulis
+        oleh KGPAA Mangkunegara IV. Serat Wedhatama berisi lima tembang macapat (pupuh)
+        dan terdiri atas 100 bait. Kelima pupuh itu adalah pangkur, sinom, pocung,
+        gambuh, dan kinanthi. Serat tersebut memuat pesan-pesan yang mendorong manusia
+        berbudi luhur dalam bersikap.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 93.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+--- !u!4 &799918792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 799918791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &809964100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,6 +4064,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &813281622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: title
+      value: Filosofi Tembang Macapat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: message
+      value: 11 tembang macapat melambangkan fase kehidupan manusia dari sejak di
+        dalam kandungan hingga di akhirat. Urutannya yaitu  Maskumambang, Mijil,
+        Sinom, Kinanthi, Asmaradana, Gambuh, Dandanggula, Durma, Pangkur, Megatruh,
+        Pocung.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 169.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+--- !u!4 &813281623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 813281622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &818288304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,95 +4908,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &997787114
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 997787115}
-  - component: {fileID: 997787117}
-  - component: {fileID: 997787116}
-  m_Layer: 11
-  m_Name: Trivia Interactable (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &997787115
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997787114}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 93.44, y: -0.69, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 280586501}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &997787116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997787114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Serat Wedhatama
-  message: Serat Wedhatama terdiri dari tiga kata, yaitu Serat, Wedha, dan Tama.
-    Serat yang berarti tulisan, Wedha yang berarti ajaran, Tama yang berarti utama.
-    Serat Wedhatama adalah sebuah karya sastra Jawa Anyar yang ditulis oleh KGPAA
-    Mangkunegara IV. Serat Wedhatama berisi lima tembang macapat (pupuh) dan terdiri
-    atas 100 bait. Kelima pupuh itu adalah pangkur, sinom, pocung, gambuh, dan kinanthi.
-    Serat tersebut memuat pesan-pesan yang mendorong manusia berbudi luhur dalam
-    bersikap.
---- !u!58 &997787117
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997787114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
 --- !u!1001 &1044874132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5599,96 +5272,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1099754898
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1099754899}
-  - component: {fileID: 1099754901}
-  - component: {fileID: 1099754900}
-  m_Layer: 11
-  m_Name: Trivia Interactable (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1099754899
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099754898}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.920002, y: 32.67, z: 0.051467806}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 77604521}
-  m_Father: {fileID: 59898860}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1099754900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099754898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc5674a09274c24194071a2f800e9f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Ngunduh Mantu
-  message: Ngunduh Mantu berasal dari kata bahasa Jawa yang terdiri dari dua kata,
-    yakni Ngunduh dan Mantu. Ngunduh dalam bahasa Indonesia berarti memanen atau
-    panen. Sedangkan Mantu berarti menantu. Makna sesungguhnya dari Ngunduh Mantu
-    ini adalah orang tua yang mendapatkan menantu saat menikahkan anak laki-lakinya.
-    Pada zaman dahulu, prosesi ngunduh mantu wajib dilaksanakan untuk memboyong kedua
-    mempelai menuju rumah pengantin pria. Namun, seiring berkembangnya waktu, prosesi
-    ini tidak lagi menjadi kewajiban yang harus dilakukan dalam proses pernikahan
-    adat Jawa.
---- !u!58 &1099754901
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099754898}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5bec2f83422d3f44b97e6ccf3d10fa56, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3
 --- !u!1 &1104588920
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,7 +5307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -161.26, y: -30.61}
+  m_AnchoredPosition: {x: -157.2, y: -41.2}
   m_SizeDelta: {x: 4.8557, y: 2.9012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104588922
@@ -6487,12 +6070,15 @@ RectTransform:
   - {fileID: 1104588921}
   - {fileID: 1924122343}
   - {fileID: 720083896}
+  - {fileID: 1836318877}
+  - {fileID: 554603108}
+  - {fileID: 1750312247}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 173.34445, y: 30}
+  m_AnchoredPosition: {x: 165, y: 8}
   m_SizeDelta: {x: 356.992, y: 105.0312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1239879572
@@ -7199,7 +6785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171.32, y: -30.61}
+  m_AnchoredPosition: {x: -168.49, y: -41.2}
   m_SizeDelta: {x: 6.1655, y: 2.9012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389430022
@@ -43805,90 +43391,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1482218024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1482218025}
-  - component: {fileID: 1482218026}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1482218025
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482218024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 729666205}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1482218026
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482218024}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -152714282, guid: 6a4e8b1855d38984c8d4c776a87eb0e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.21, y: 4.7110515}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1506406501
 GameObject:
   m_ObjectHideFlags: 0
@@ -45066,7 +44568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8596565026651916190, guid: dcffa208add0326419d6865be96441d3, type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAA4Iezq4xlLbwIAACkFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG68LYPBzSXesQ0kUSprSTjTfCusYaZMmjR4Bk+PdeyTZ26Apx7uucoyt/Ei5NDblVeq05e1YMyPcR8WfybdQHn+BE90pu+Qd0OW+c2dIn0ZDzm1quEI99mVEVWM3zH3IvfHKEoJO8ULpasT2kyliDcEGFAQxpZX21ROhzRE74M773JWc8Te/86QNP99HogsccpAU9SJ1Plsv53WzRFoxn0WQaLxbJctEWNnVO5oJWNTAvoi+Po6gbtYinIVOiwjbJq8mVENy09Ig910F+SmvjUBwmME5RbuAUT2YIlMD3pfXkh+WvRWHAtm5oen7gGn1r+pKfqjGzoubQkHunwvlJyTyQano+/xcexyFcaFU9dWPjIMmWPD/8puecGjswewg/DJgHi45UHOhOwFsJ8kWttXKSYdBq50udgelD//eqLC0hP/R4Q/UGdHXveWd4d7NewyWIP6WCVzsfmswbYCtUMDwsBGi8ml9IOKyLaVsg6ln8NfCH7od71QYeuTYWQ61K6entlNM+layCZ16Ns6nSEgLckq5BUmHPG2xjb2/wJjYYexN5pP4FtcPbWPcwbkoC3OdH0U1oo47XyzKlOj6DKV+dFVxCT9oHXtCnVEnZLNjQk65s63RB80HZ3nH2dbUIZTOazNgCIIlZDsU4Seg9wHSWRLvd8m5ZkLB7XKJOKjYN0dYevLWhJxIXrfuyjNaa1mHbmabHNf+o1MBzLgu1zTWAfP3awoDGKfgu2YpxdGgL1nIZLpx8ZkSo/AAsuzbKgtTVyWqa9V0yUvN3ZT2SkTR8SjLi4esybzS8czj64V2zC7n8A1BLAwQUAAAICAAAOCHstRAaWG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UmKKcaKZcYppaqqZYUpyapqumVmiZWqqkbGZQVKShblFmlIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAOCHs6uMZS28CAAApBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAOCHstRAaWG0AAAB4AAAACQAkAAAAAAAAAAAAAAC8AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHQDAAAAAA==
+      value: UEsDBBQAAAgIAAA4IezxL6tYagIAACMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG68LYvBK6aw0hXZAwoZ1svBHWNdYgSx49AiTDv/dKtrFL2SCf+zrn6NpfhEtTQWaVXmvONooB+T4g/ky+DbrgM5zpQckd/4Q2550zW/gkGnLeqOUK8diXGVWC1Tz7IQ/CJ0cIOslzpcsVO0CijDUI51QYwJBW1ldLhL4G5Ix/w4UvueBp/OBPn3haRIMrHjOQFnSXGs+mo1mTPIwXo0mEvzhuiuoaJzNBywqYF9CVTqN2ShzViRLFNTm+Q6aE4KZhRuylCsoTWhmHujCBcYpKA514NEGgAH4orOfdL3/NcwO2MULTy5JrtKzuS36q2seSmmPN7YMK5yfNp4FU3XPzX3gYh3CuVfncjo2DJFvw7PhGLxk1tudzH172mAeHTlQc6V7AewHyRa21cpJh0GrnS52B8bJ7vClLCsiOHV5TvQNd1VneGt5eqtdwDeLPieDl3odG0xrYCRUMD7sAGq/mFxIOm2KaFoh6Fn8M/KaH/ko1gSeujcVQo1J6envltE8lq+CZV+NsorSEADekK5BU2MsW29j7G7yL9cbeRZ6of3ma4U2sfSfuSgLc5UfRXWirTrfLMoU6bcAUr84KLqEj7QMv6FOipKwXrO9JW7ZzOqdZr+zgOPt3tQhlEzqfsBnAPGYZ5MP5nC4AxpN5tN8/PjzmJOwel6iTim1NtLEHb012zSXuWftNGaw1rcKyM01Pa/5Zqp7lXOZql2kA+Vp3uBEHjUPwtWQrxtGgHVjLZbhv8pUSobIjsPTWKA1KV2eradp1SUnFP5T1SEqS8BFJiYdvu7zV8MHh5Ie3za7k+hdQSwMEFAAACAgAADgh7LUQGlhtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJiinGimXGKaWqqmWFKcmqarplZomVqqpGxmUFSkoW5RZpSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAADgh7PEvq1hqAgAAIwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAADgh7LUQGlhtAAAAeAAAAAkAJAAAAAAAAAAAAAAAtwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABvAwAAAAA=
       objectReference: {fileID: 0}
     - target: {fileID: 8596565026651916190, guid: dcffa208add0326419d6865be96441d3, type: 3}
       propertyPath: tagNames.Array.size
@@ -46132,6 +45634,141 @@ Transform:
   m_Father: {fileID: 1993620923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1750312246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1750312247}
+  - component: {fileID: 1750312249}
+  - component: {fileID: 1750312248}
+  m_Layer: 5
+  m_Name: Text (TMP) (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1750312247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750312246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226523139}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 42.68, y: -37.44}
+  m_SizeDelta: {x: 7.3158, y: 2.9012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1750312248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750312246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Tekan Shift di dekat kotak untuk menarik/mendorong
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.6
+  m_fontSizeBase: 0.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1750312249
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750312246}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1764124312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46608,6 +46245,141 @@ Transform:
   m_Father: {fileID: 1993620923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836318876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836318877}
+  - component: {fileID: 1836318879}
+  - component: {fileID: 1836318878}
+  m_Layer: 5
+  m_Name: Text (TMP) (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1836318877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836318876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226523139}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -59.73, y: -40.02}
+  m_SizeDelta: {x: 7.3158, y: 2.9012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1836318878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836318876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Tekankan tombol-tombol untuk mengubah posisi platform
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.5
+  m_fontSizeBase: 0.5
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1836318879
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836318876}
+  m_CullTransparentMesh: 1
 --- !u!1 &1846793581
 GameObject:
   m_ObjectHideFlags: 0
@@ -46692,90 +46464,6 @@ Transform:
   m_Father: {fileID: 1993620923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1 &1853794488
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1853794489}
-  - component: {fileID: 1853794490}
-  m_Layer: 11
-  m_Name: Trivia Sign
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1853794489
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853794488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 169320800}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1853794490
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853794488}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -152714282, guid: 6a4e8b1855d38984c8d4c776a87eb0e5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.21, y: 4.7110515}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1872556210
 GameObject:
   m_ObjectHideFlags: 0
@@ -46958,6 +46646,87 @@ Transform:
   m_Father: {fileID: 1993620923}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1908653676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: title
+      value: Ngunduh Mantu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633810029395315294, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: message
+      value: Ngunduh Mantu berasal dari kata bahasa Jawa yang terdiri dari dua kata,
+        yakni Ngunduh dan Mantu. Ngunduh dalam bahasa Indonesia berarti memanen atau
+        panen. Sedangkan Mantu berarti menantu. Makna sesungguhnya dari Ngunduh Mantu
+        ini adalah orang tua yang mendapatkan menantu saat menikahkan anak laki-lakinya.
+        Pada zaman dahulu, prosesi ngunduh mantu wajib dilaksanakan untuk memboyong
+        kedua mempelai menuju rumah pengantin pria. Namun, seiring berkembangnya
+        waktu, prosesi ini tidak lagi menjadi kewajiban yang harus dilakukan dalam
+        proses pernikahan adat Jawa.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.920002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+--- !u!4 &1908653677 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+  m_PrefabInstance: {fileID: 1908653676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1924122342
 GameObject:
   m_ObjectHideFlags: 0
@@ -46993,7 +46762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151.11, y: -28.72}
+  m_AnchoredPosition: {x: -148.2, y: -38.299}
   m_SizeDelta: {x: 4.8557, y: 2.9012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924122344
@@ -47729,6 +47498,7 @@ MonoBehaviour:
   - {fileID: 2117583246}
   - {fileID: 1688711669}
   - {fileID: 468988628}
+  - {fileID: 554603107}
 --- !u!114 &2041299564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48079,3 +47849,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &9117570623207228496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 59898860}
+    m_Modifications:
+    - target: {fileID: 1277244695730340525, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_Name
+      value: Trivia Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.085781
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5838928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051467806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596996449660908003, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa11426d308f4bf4b89ff3044df70648, type: 3}
