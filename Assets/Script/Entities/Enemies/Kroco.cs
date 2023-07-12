@@ -38,7 +38,7 @@ public class Kroco : Enemy
         }
     }
 
-    private void OnDrawGizmos()
+        private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, AttackRadius);
     }
