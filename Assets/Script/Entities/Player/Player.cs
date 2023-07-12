@@ -30,7 +30,7 @@ public class Player : Entity
             //Vector3 destination = new Vector3(transform.position.x - Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed*Time.deltaTime*2);
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
-            rb.velocity = new Vector2(-Speed, rb.velocity.y+Multiplier*0.2f);
+            rb.velocity = new Vector2(-Speed, rb.velocity.y+Multiplier*0.5f);
             if (ispulling) { return; }
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
@@ -39,7 +39,7 @@ public class Player : Entity
             //Vector3 destination = new Vector3(transform.position.x + Speed * Time.deltaTime, transform.position.y, transform.position.z);
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed * Time.deltaTime*2);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
-            rb.velocity = new Vector2(Speed, rb.velocity.y+Multiplier*0.2f);
+            rb.velocity = new Vector2(Speed, rb.velocity.y+Multiplier*0.5f);
             if (ispulling) { return; }
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
@@ -73,7 +73,7 @@ public class Player : Entity
     {
         Collider2D playerCollider = GetComponent<BoxCollider2D>();
         Vector2 raycastPos = playerCollider.bounds.center;
-        float raycastDist = playerCollider.bounds.extents.y + 0.2f;
+        float raycastDist = playerCollider.bounds.extents.y + 0.1f;
 
         RaycastHit2D hit = Physics2D.BoxCast(raycastPos, playerCollider.bounds.size, 0f, Vector2.down, raycastDist, this.LayerMask);
         Color rayColor;
@@ -90,7 +90,7 @@ public class Player : Entity
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, 0), Vector2.down * raycastDist, rayColor);
         Debug.DrawRay(raycastPos - new Vector2(playerCollider.bounds.extents.x, raycastDist), 2 * raycastDist * Vector2.right, rayColor);
         
-        return hit.collider != null && rb.velocity.y >= -0.2 && rb.velocity.y <= 0.2f;
+        return hit.collider != null && rb.velocity.y >= -0.5 && rb.velocity.y <= 0.5f;
     }
 
     public void Attack()
