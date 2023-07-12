@@ -7,6 +7,7 @@ public class Player : Entity
     private bool isMoving = false;
     private bool isJumping = false;
     private bool meleehit = false;
+    private bool ispulling = false;
     private Animator animator;
     [SerializeField] protected LayerMask enemyMask;
     private float startShootingTime;
@@ -15,6 +16,7 @@ public class Player : Entity
     public bool IsJumping { get => isJumping; set => isJumping = value; }
     public Animator Animator { get => animator; set => animator = value; }
     public int Multiplier { get => multiplier; set => multiplier = value; }
+    public bool IsPulling { get => ispulling; set => ispulling = value; }
 
     //utility
     private int multiplier = 1;
@@ -29,6 +31,7 @@ public class Player : Entity
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed*Time.deltaTime*2);
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
             rb.velocity = new Vector2(-Speed, rb.velocity.y+Multiplier*0.2f);
+            if (ispulling) { return; }
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (MadepMana == Hadap.Kanan)
@@ -37,6 +40,7 @@ public class Player : Entity
             //transform.position = Vector3.MoveTowards(transform.position, destination, Speed * Time.deltaTime*2);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
             rb.velocity = new Vector2(Speed, rb.velocity.y+Multiplier*0.2f);
+            if (ispulling) { return; }
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
         
