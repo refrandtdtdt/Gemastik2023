@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public abstract class Box : MonoBehaviour,IMoveable
 {
@@ -15,6 +16,7 @@ public abstract class Box : MonoBehaviour,IMoveable
     protected FixedJoint2D joint;
     protected Collider2D playercol;
     protected bool startLanded = false;
+
 
     private void Start()
     {
@@ -76,6 +78,11 @@ public abstract class Box : MonoBehaviour,IMoveable
         joint.enabled = false;
         joint.connectedBody = null;
         player.IsPulling = false;
+        /*        GameObject[] obstacles = GameObject.FindGameObjectsWithTag("Ground");
+                foreach(GameObject obstacle in obstacles)
+                {
+                    AstarPath.active.UpdateGraphs(obstacle.GetComponent<Collider2D>().bounds);
+                }*/
         //player.Speed += speedminus;
     }
 

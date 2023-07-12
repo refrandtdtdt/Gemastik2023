@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caa8fcea1a27284f84db6cb4ca853a2, type: 3}
   m_Name: Mekanisme aneg
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: c6417d9a9130714459a8243becd18791, type: 3}
   Dialogues:
   - name: Rama
     portrait: {fileID: -1124575273, guid: a872293b382f7ee4a900dfbf6d6f5d1a, type: 3}

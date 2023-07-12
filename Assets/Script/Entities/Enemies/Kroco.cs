@@ -25,7 +25,6 @@ public class Kroco : Enemy
         Scale = transform.localScale;
         animator = GetComponent<Animator>();
         enemyAI = GetComponent<EnemyAI>();
-        player = enemyAI.target.GetComponent<Player>();
         AttackPower = 10;
         cd = attackcd;
     }
@@ -33,7 +32,13 @@ public class Kroco : Enemy
     // Update is called once per frame
     void Update()
     {
-        
+        try
+        {
+            player = enemyAI.target.GetComponent<Player>();
+        }catch(Exception e)
+        {
+            Debug.Log(e);
+        }
     }
     private void FixedUpdate()
     {
