@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caa8fcea1a27284f84db6cb4ca853a2, type: 3}
+  m_Name: Bertemu Sarpanaka
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: c6417d9a9130714459a8243becd18791, type: 3}
+  Dialogues:
+  - name: Serpanaka
+    portrait: {fileID: -1440325531, guid: 239f57f4e6e89a04896e2124d1532c6e, type: 3}
+    dialog: Hei kamu, siapa namamu?
+  - name: Rama
+    portrait: {fileID: -1322087267, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: Namaku Rama, aku adalah seorang pengembara dari Ayodya
+  - name: Serpanaka
+    portrait: {fileID: -1440325531, guid: 239f57f4e6e89a04896e2124d1532c6e, type: 3}
+    dialog: Namaku Serpanaka, aku ingin menjadi istrimu. apakah kamu mau?
+  - name: Rama
+    portrait: {fileID: 401591068, guid: 0a9a765a755fe284aa0bf0a79da2a0c0, type: 3}
+    dialog: Maaf, tetapi aku sudah memiliki istri yang cantik bernama Sinta. tidak
+      ada ruang untukmu di diriku
+  - name: Serpanaka
+    portrait: {fileID: -1440325531, guid: 239f57f4e6e89a04896e2124d1532c6e, type: 3}
+    dialog: Bodo amat, pokoknya aku cuma pingin nikah sama kamu.
+  - name: Serpanaka
+    portrait: {fileID: -1440325531, guid: 239f57f4e6e89a04896e2124d1532c6e, type: 3}
+    dialog: aku akan menculikmu Rama
+  - name: Lesmana
+    portrait: {fileID: 21300000, guid: 324297ef65730bf428ffddb4328d7d80, type: 3}
+    dialog: Waduh, bahaya ini mas. ayo kita lawan dia bersama-sama
+  - name: Rama
+    portrait: {fileID: -20640533, guid: ae5afb1b276e66047880c697114a7a8d, type: 3}
+    dialog: tenang saja, Lesmana. Aku bisa melakukan ini setiap hari

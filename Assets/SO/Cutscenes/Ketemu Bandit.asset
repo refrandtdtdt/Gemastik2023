@@ -29,3 +29,6 @@ MonoBehaviour:
   - name: Bandit
     portrait: {fileID: 251902808, guid: 9ce13e1845c563c4ca7c18ee5945e7b2, type: 3}
     dialog: Ayo, laksanakan!
+  - name: Lesmana
+    portrait: {fileID: 21300000, guid: 324297ef65730bf428ffddb4328d7d80, type: 3}
+    dialog: sepertinya kita harus gelud, Mas.
