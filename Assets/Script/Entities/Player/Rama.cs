@@ -43,6 +43,7 @@ public class Rama : Player
                 if(Animator.GetBool("Moving"))
                     Animator.SetBool("Moving", false);
             }
+            if (IsPulling) { return;  }
             if (Input.GetKeyDown(KeyCode.Space) && CheckGround()) {
                 IsJumping = true;
             }
@@ -55,7 +56,7 @@ public class Rama : Player
                 Animator.SetBool("Moving", false);
         }
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (IsMoving) return;
+        if (IsMoving || IsPulling) return;
         if (mousePos.x >= transform.position.x)
         {
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);

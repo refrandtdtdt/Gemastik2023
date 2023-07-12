@@ -16,6 +16,7 @@ public class Kroco : Enemy
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         Scale = transform.localScale;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame

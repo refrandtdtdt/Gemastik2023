@@ -8,6 +8,7 @@ public class Enemy : Entity
     public bool isJumping = false;
     private float startTime;
     private float multiplier = 1f;
+    protected Animator animator;
     [SerializeField] protected LayerMask playerMask;
     protected float Multiplier { get => multiplier; set => multiplier = value; }
 
@@ -16,17 +17,20 @@ public class Enemy : Entity
         if (movingDirection.Equals("Left"))
         {
             //transform.position += new Vector3(-Speed*Time.deltaTime, 0);
+            animator.SetBool("Moving", true);
             rb.velocity = new Vector2(-Speed, rb.velocity.y+multiplier*0.2f);
             transform.localScale = new Vector3(-Scale.x, Scale.y, Scale.z);
         }
         else if (movingDirection.Equals("Right"))
         {
             rb.velocity = new Vector2(Speed, rb.velocity.y+multiplier*0.2f);
+            animator.SetBool("Moving", true);
             //transform.position += new Vector3(Speed * Time.deltaTime, 0);
             transform.localScale = new Vector3(Scale.x, Scale.y, Scale.z);
         }
         else
         {
+            animator.SetBool("Moving", false);
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
@@ -41,14 +45,16 @@ public class Enemy : Entity
                 //rb.AddForce(new Vector2(0, JumpDistance), ForceMode2D.Impulse);
                 rb.velocity = new Vector2(rb.velocity.x, JumpDistance);
                 JumpCount--;
-                isJumping = false;
+                //isJumping = true;
+                animator.SetBool("Jumping", true);
             }
             if (CheckGround())
             {
                 JumpCount = 1;
                 isJumping = false;
+                animator.SetBool("Jumping", false);
             }
-            isJumping = false;
+            //isJumping = false;
             startTime = Time.time;
         }
 
