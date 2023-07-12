@@ -37,4 +37,9 @@ public class Kroco : Enemy
             player.SetHealth(player.GetHealth() - AttackPower);
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, AttackRadius);
+    }
 }
