@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class BattleEntity : MonoBehaviour
 {
-    private int health, atk, def;
+    private int maxhealth, health, atk, def, level;
+    private float critRate, critDmg;
     private List<Effect> currentEffects;
+    private bool moved, alive;
+    private BattleEntity target;
 
+    public int Maxhealth { get => maxhealth; set => maxhealth = value; }
     public int Health { get => health; set => health = value; }
     public int Atk { get => atk; set => atk = value; }
     public int Def { get => def; set => def = value; }
+    public bool Moved { get => moved; set => moved = value; }
+    public bool Alive { get => alive; set => alive = value; }
+    public int Level { get => level; set => level = value; }
+    public BattleEntity Target { get => target; set => target = value; }
+    public float CritRate { get => critRate; set => critRate = value; }
+    public float CritDmg { get => critDmg; set => critDmg = value; }
 
     private void applyEffects()
     {
@@ -30,10 +40,28 @@ public class BattleEntity : MonoBehaviour
     public virtual void Move()
     {
         applyEffects();
+        if(health <= 0)
+        {
+            alive = false;
+            EndMove();
+        }
     }
 
     public void EndMove()
     {
-        // kelar
+        moved = true;
+    }
+
+    public int CalculateDamage(float dmgPercentage)
+    {
+        float crit = Random.value;
+        int critHit = (crit <= critRate) ? 1 : 0;
+        float dmg = dmgPercentage * (Atk - Target.Def / 2) * (1 + critHit * critDmg);
+        return Mathf.RoundToInt(dmg);
+    }
+
+    private void Start()
+    {
+        alive = true;
     }
 }

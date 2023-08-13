@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class BattleCharacter : BattleEntity
 {
-    private int sp, energy;
-    [SerializeField] private int spRegen, firstSkillCost, secondSkillCost;
+    private int sp, maxSp, energy, maxEnergy, exp, nextLevel, spRegen, firstSkillCost, secondSkillCost, aggro;
     //private static List<string> inventory;
     public int Sp { get => sp; set => sp = value; }
     public int Energy { get => energy; set => energy = value; }
     public int FirstSkillCost { get => firstSkillCost; set => firstSkillCost = value; }
     public int SecondSkillCost { get => secondSkillCost; set => secondSkillCost = value; }
+    public int Aggro { get => aggro; set => aggro = value; }
+    public int MaxSp { get => maxSp; set => maxSp = value; }
+    public int MaxEnergy { get => maxEnergy; set => maxEnergy = value; }
+    public int SpRegen { get => spRegen; set => spRegen = value; }
 
     public virtual void BasicAttack()
     {
-        sp += spRegen;
+        sp += SpRegen;
     }
     public virtual void FirstSkill()
     {
@@ -32,7 +35,7 @@ public class BattleCharacter : BattleEntity
     public void UseItem()
     {
         // ngepake item dari inventory
-        EndMove();
+        
     }
 
     override public void Move()
@@ -40,5 +43,16 @@ public class BattleCharacter : BattleEntity
         base.Move();
         //try catch
         energy++;
+    }
+
+    public void AddExp(int exp)
+    {
+        this.exp += exp;
+        if(this.exp >= nextLevel)
+        {
+            Level++;
+            this.exp -= nextLevel;
+            nextLevel *= 2; // scaling sementara
+        }
     }
 }

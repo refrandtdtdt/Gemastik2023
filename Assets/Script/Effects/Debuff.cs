@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleEnemy : BattleEntity
+public abstract class Debuff : Effect
 {
-    //mungkin gold ato exp
-
-
+    
 }
