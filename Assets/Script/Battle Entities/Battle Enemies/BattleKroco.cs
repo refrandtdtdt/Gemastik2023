@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BattleKroco : BattleEnemy
 {
+    [SerializeField] private GameObject prefab;
+    
     public override void Move()
     {
         base.Move();
@@ -13,8 +15,7 @@ public class BattleKroco : BattleEnemy
 
     private void basicAttack()
     {
-        // ngambil character secara random
-        // BattleEntity character
-        // character.Health -= 10;
+        Target = TargetingSystem.TargetAllyEntity(true);
+        
     }
 }

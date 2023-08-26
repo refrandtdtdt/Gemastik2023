@@ -17,18 +17,22 @@ public class BattleCharacter : BattleEntity
 
     public virtual void BasicAttack()
     {
+        Anim.Play("BasicAttack");
         sp += SpRegen;
     }
     public virtual void FirstSkill()
     {
+        Anim.Play("FirstSkill");
         sp -= FirstSkillCost;
     }
     public virtual void SecondSkill()
     {
+        Anim.Play("SecondSkill");
         sp -= SecondSkillCost;
     }
     public virtual void Ultimate()
     {
+        Anim.Play("Ultimate");
         energy = 0;
     }
 

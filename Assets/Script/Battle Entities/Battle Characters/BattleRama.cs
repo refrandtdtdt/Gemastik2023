@@ -6,6 +6,7 @@ public class BattleRama : BattleCharacter
 {
     public BattleRama()
     {
+        Alive = true;
         Maxhealth = 1000;
         Atk = 100;
         Def = 30;
@@ -17,6 +18,7 @@ public class BattleRama : BattleCharacter
         Health = Maxhealth;
         Sp = MaxSp;
         Energy = MaxEnergy;
+        Name = GetType().Name;
     }
 
     override public void BasicAttack()

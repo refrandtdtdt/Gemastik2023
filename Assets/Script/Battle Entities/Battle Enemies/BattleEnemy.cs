@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BattleEnemy : BattleEntity
 {
@@ -9,5 +10,4 @@ public class BattleEnemy : BattleEntity
 
     public int ExpDrop { get => expDrop; set => expDrop = value; }
     public int GoldDrop { get => goldDrop; set => goldDrop = value; }
-
 }

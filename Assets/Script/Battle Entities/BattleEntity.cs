@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleEntity : MonoBehaviour
+public class BattleEntity
 {
+    private string name;
     private int maxhealth, health, atk, def, level;
     private float critRate, critDmg;
     private List<Effect> currentEffects;
     private bool moved, alive;
     private BattleEntity target;
+    private Animator anim;
 
     public int Maxhealth { get => maxhealth; set => maxhealth = value; }
     public int Health { get => health; set => health = value; }
@@ -20,6 +22,8 @@ public class BattleEntity : MonoBehaviour
     public BattleEntity Target { get => target; set => target = value; }
     public float CritRate { get => critRate; set => critRate = value; }
     public float CritDmg { get => critDmg; set => critDmg = value; }
+    public string Name { get => name; set => name = value; }
+    public Animator Anim { get => anim; set => anim = value; }
 
     private void applyEffects()
     {
@@ -58,10 +62,5 @@ public class BattleEntity : MonoBehaviour
         int critHit = (crit <= critRate) ? 1 : 0;
         float dmg = dmgPercentage * (Atk - Target.Def / 2) * (1 + critHit * critDmg);
         return Mathf.RoundToInt(dmg);
-    }
-
-    private void Start()
-    {
-        alive = true;
     }
 }
